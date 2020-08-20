@@ -62,4 +62,12 @@
     Private Sub TabPage6_Click(sender As Object, e As EventArgs) Handles TabPage6.Click
 
     End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged_3(sender As Object, e As EventArgs) Handles cbx1.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub TxtValor_TextChanged(sender As Object, e As EventArgs) Handles TxtValor.TextChanged
+
+    End Sub
 End Class
