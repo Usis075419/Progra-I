@@ -31,10 +31,12 @@ Partial Class Form1
         Me.ComboBox11 = New System.Windows.Forms.ComboBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.cbode = New System.Windows.Forms.ComboBox()
         Me.LblDe = New System.Windows.Forms.Label()
         Me.LblA = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnnuevo = New System.Windows.Forms.Button()
         Me.lblrespuesta = New System.Windows.Forms.Label()
         Me.BtnConvertidormonedas = New System.Windows.Forms.Button()
         Me.LblValor = New System.Windows.Forms.Label()
@@ -102,7 +104,7 @@ Partial Class Form1
         '
         Me.cboa.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.cboa.FormattingEnabled = True
-        Me.cboa.Items.AddRange(New Object() {"Dolar", "Euro", "Yen Japones", "Peso Mexicano ", "Dolar Australiano", "Franco Suizo ", "Dolar Canadiense ", "Afgani", "Peso Chileno", "Colon Costarricense "})
+        Me.cboa.Items.AddRange(New Object() {"Dolar", "Euro", "Yen", "Peso mx", "Dolar aus", "Franco", "Dolar c", "Afgani", "Peso Chileno", "Colon cr"})
         Me.cboa.Location = New System.Drawing.Point(286, 20)
         Me.cboa.Name = "cboa"
         Me.cboa.Size = New System.Drawing.Size(141, 21)
@@ -186,6 +188,7 @@ Partial Class Form1
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TabPage1.Controls.Add(Me.Button6)
         Me.TabPage1.Controls.Add(Me.cbode)
         Me.TabPage1.Controls.Add(Me.LblDe)
         Me.TabPage1.Controls.Add(Me.LblA)
@@ -198,11 +201,26 @@ Partial Class Form1
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Monedas"
         '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.Transparent
+        Me.Button6.BackgroundImage = Global.Convertidor.My.Resources.Resources._42fc3a978429175627aedc811867b8b5
+        Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow
+        Me.Button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
+        Me.Button6.Location = New System.Drawing.Point(218, 274)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 36
+        Me.Button6.Text = "SALIR"
+        Me.Button6.UseVisualStyleBackColor = False
+        '
         'cbode
         '
         Me.cbode.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.cbode.FormattingEnabled = True
-        Me.cbode.Items.AddRange(New Object() {"Dolar", "Euro", "Yen Japones", "Peso Mexicano ", "Dolar Australiano", "Franco Suizo ", "Dolar Canadiense ", "Afgani", "Peso Chileno", "Colon Costarricense "})
+        Me.cbode.Items.AddRange(New Object() {"Dolar", "Euro", "Yen", "Peso mx", "Dolar aus", "Franco", "Dolar c", "Afgani", "Peso Chileno", "Colon cr"})
         Me.cbode.Location = New System.Drawing.Point(79, 20)
         Me.cbode.Name = "cbode"
         Me.cbode.Size = New System.Drawing.Size(141, 21)
@@ -232,6 +250,7 @@ Partial Class Form1
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.btnnuevo)
         Me.Panel1.Controls.Add(Me.lblrespuesta)
         Me.Panel1.Controls.Add(Me.BtnConvertidormonedas)
         Me.Panel1.Controls.Add(Me.LblValor)
@@ -240,6 +259,21 @@ Partial Class Form1
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(362, 156)
         Me.Panel1.TabIndex = 34
+        '
+        'btnnuevo
+        '
+        Me.btnnuevo.BackColor = System.Drawing.Color.Transparent
+        Me.btnnuevo.BackgroundImage = Global.Convertidor.My.Resources.Resources._42fc3a978429175627aedc811867b8b5
+        Me.btnnuevo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnnuevo.FlatAppearance.BorderSize = 0
+        Me.btnnuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow
+        Me.btnnuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
+        Me.btnnuevo.Location = New System.Drawing.Point(207, 52)
+        Me.btnnuevo.Name = "btnnuevo"
+        Me.btnnuevo.Size = New System.Drawing.Size(75, 23)
+        Me.btnnuevo.TabIndex = 29
+        Me.btnnuevo.Text = "NUEVO"
+        Me.btnnuevo.UseVisualStyleBackColor = False
         '
         'lblrespuesta
         '
@@ -260,18 +294,18 @@ Partial Class Form1
         Me.BtnConvertidormonedas.FlatAppearance.BorderSize = 0
         Me.BtnConvertidormonedas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow
         Me.BtnConvertidormonedas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
-        Me.BtnConvertidormonedas.Location = New System.Drawing.Point(112, 52)
+        Me.BtnConvertidormonedas.Location = New System.Drawing.Point(66, 52)
         Me.BtnConvertidormonedas.Name = "BtnConvertidormonedas"
-        Me.BtnConvertidormonedas.Size = New System.Drawing.Size(75, 23)
+        Me.BtnConvertidormonedas.Size = New System.Drawing.Size(84, 23)
         Me.BtnConvertidormonedas.TabIndex = 25
-        Me.BtnConvertidormonedas.Text = "Convertidor"
+        Me.BtnConvertidormonedas.Text = "CONVERTIR"
         Me.BtnConvertidormonedas.UseVisualStyleBackColor = False
         '
         'LblValor
         '
         Me.LblValor.AutoSize = True
         Me.LblValor.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.LblValor.Location = New System.Drawing.Point(66, 5)
+        Me.LblValor.Location = New System.Drawing.Point(77, 5)
         Me.LblValor.Name = "LblValor"
         Me.LblValor.Size = New System.Drawing.Size(31, 13)
         Me.LblValor.TabIndex = 27
@@ -281,7 +315,7 @@ Partial Class Form1
         '
         Me.TxtValor.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.TxtValor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtValor.Location = New System.Drawing.Point(103, 3)
+        Me.TxtValor.Location = New System.Drawing.Point(130, 3)
         Me.TxtValor.Name = "TxtValor"
         Me.TxtValor.Size = New System.Drawing.Size(100, 20)
         Me.TxtValor.TabIndex = 24
@@ -756,7 +790,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(600, 348)
+        Me.ClientSize = New System.Drawing.Size(558, 348)
         Me.Controls.Add(Me.TabControl1)
         Me.Name = "Form1"
         Me.Text = "Conversor"
@@ -849,4 +883,6 @@ Partial Class Form1
     Friend WithEvents ComboBox8 As ComboBox
     Friend WithEvents ComboBox9 As ComboBox
     Friend WithEvents ComboBox10 As ComboBox
+    Friend WithEvents Button6 As Button
+    Friend WithEvents btnnuevo As Button
 End Class
