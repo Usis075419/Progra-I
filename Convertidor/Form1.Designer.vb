@@ -747,7 +747,7 @@ Partial Class Form1
         Me.BnSalis.BackColor = System.Drawing.Color.Fuchsia
         Me.BnSalis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow
         Me.BnSalis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
-        Me.BnSalis.Location = New System.Drawing.Point(207, 259)
+        Me.BnSalis.Location = New System.Drawing.Point(194, 259)
         Me.BnSalis.Name = "BnSalis"
         Me.BnSalis.Size = New System.Drawing.Size(75, 23)
         Me.BnSalis.TabIndex = 29
