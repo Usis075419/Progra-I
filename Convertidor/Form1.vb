@@ -962,4 +962,337 @@
     Private Sub btnnew_Click(sender As Object, e As EventArgs) Handles btnnew.Click
         txtvalor3.Clear()
     End Sub
+
+
+
+    Private Sub btnlongitud_Click(sender As Object, e As EventArgs) Handles btnlongitud.Click
+        If cbxentrada.Text = "Milimetros" And cbxsalida.Text = "Milimetros" Then
+            lblres.Text = Val(txtcodigo.Text)
+            lblnum.Text = "mm"
+        ElseIf cbxentrada.Text = "Milimetros" And cbxsalida.Text = "Centimetros" Then
+            lblres.Text = Val(txtcodigo.Text) / 10
+            lblnum.Text = "cm"
+        ElseIf cbxentrada.Text = "Milimetros" And cbxsalida.Text = "Metros" Then
+            lblres.Text = Val(txtcodigo.Text) / 1000
+            lblnum.Text = "m"
+        ElseIf cbxentrada.Text = "Milimetros" And cbxsalida.Text = "Kilometros" Then
+            lblres.Text = Val(txtcodigo.Text) / 1000000
+            lblnum.Text = "km"
+        ElseIf cbxentrada.Text = "Milimetros" And cbxsalida.Text = "Pulgada" Then
+            lblres.Text = Val(txtcodigo.Text) * 0.0394
+            lblnum.Text = "pulg"
+        ElseIf cbxentrada.Text = "Milimetros" And cbxsalida.Text = "Pie" Then
+            lblres.Text = Val(txtcodigo.Text) * 0.00328084
+            lblnum.Text = "pastel"
+        ElseIf cbxentrada.Text = "Milimetros" And cbxsalida.Text = "Yarda" Then
+            lblres.Text = Val(txtcodigo.Text) * 0.00109361
+            lblnum.Text = "yarda"
+        ElseIf cbxentrada.Text = "Milimetros" And cbxsalida.Text = "Milla" Then
+            lblres.Text = Val(txtcodigo.Text) * 0.000000621371
+            lblnum.Text = "milla"
+        ElseIf cbxentrada.Text = "Milimetros" And cbxsalida.Text = "Decámetro" Then
+            lblres.Text = Val(txtcodigo.Text) * 0.0001
+            lblnum.Text = "presa"
+        ElseIf cbxentrada.Text = "Milimetros" And cbxsalida.Text = "Decímetro" Then
+            lblres.Text = Val(txtcodigo.Text) * 0.01
+            lblnum.Text = "dm"
+
+        ElseIf cbxentrada.Text = "Centimetros" And cbxsalida.Text = "Milimetros" Then
+            lblres.Text = Val(txtcodigo.Text) * 10
+            lblnum.Text = "mm"
+        ElseIf cbxentrada.Text = "Centimetros" And cbxsalida.Text = "Centimetros" Then
+            lblres.Text = Val(txtcodigo.Text)
+            lblnum.Text = "cm"
+        ElseIf cbxentrada.Text = "Centimetros" And cbxsalida.Text = "Metros" Then
+            lblres.Text = Val(txtcodigo.Text) / 100
+            lblnum.Text = "m"
+        ElseIf cbxentrada.Text = "Centimetros" And cbxsalida.Text = "Kilometros" Then
+            lblres.Text = Val(txtcodigo.Text) / 100000
+            lblnum.Text = "km"
+        ElseIf cbxentrada.Text = "Centimetros" And cbxsalida.Text = "Pulgada" Then
+            lblres.Text = Val(txtcodigo.Text) * 0.393701
+            lblnum.Text = "pulg"
+        ElseIf cbxentrada.Text = "Centimetros" And cbxsalida.Text = "Pie" Then
+            lblres.Text = Val(txtcodigo.Text) * 0.0328084
+            lblnum.Text = "pastel"
+        ElseIf cbxentrada.Text = "Centimetros" And cbxsalida.Text = "Yarda" Then
+            lblres.Text = Val(txtcodigo.Text) * 0.0109361
+            lblnum.Text = "yarda"
+        ElseIf cbxentrada.Text = "Centimetros" And cbxsalida.Text = "Milla" Then
+            lblres.Text = Val(txtcodigo.Text) * 0.00000621371
+            lblnum.Text = "Milla"
+        ElseIf cbxentrada.Text = "Centimetros" And cbxsalida.Text = "Decámetro" Then
+            lblres.Text = Val(txtcodigo.Text) * 0.001
+            lblnum.Text = "presa"
+        ElseIf cbxentrada.Text = "Centimetros" And cbxsalida.Text = "Decímetro" Then
+            lblres.Text = Val(txtcodigo.Text) * 0.1
+            lblnum.Text = "dm"
+
+        ElseIf cbxentrada.Text = "Metros" And cbxsalida.Text = "Milimetros" Then
+            lblres.Text = Val(txtcodigo.Text) * 1000
+            lblnum.Text = "mm"
+        ElseIf cbxentrada.Text = "Metros" And cbxsalida.Text = "Centimetros" Then
+            lblres.Text = Val(txtcodigo.Text) * 100
+            lblnum.Text = "cm"
+        ElseIf cbxentrada.Text = "Metros" And cbxsalida.Text = "Metros" Then
+            lblres.Text = Val(txtcodigo.Text)
+            lblnum.Text = "m"
+        ElseIf cbxentrada.Text = "Metros" And cbxsalida.Text = "Kilometros" Then
+            lblres.Text = Val(txtcodigo.Text) / 1000
+            lblnum.Text = "km"
+        ElseIf cbxentrada.Text = "Metros" And cbxsalida.Text = "Pulgada" Then
+            lblres.Text = Val(txtcodigo.Text) * 39.3701
+            lblnum.Text = "pulg"
+        ElseIf cbxentrada.Text = "Metros" And cbxsalida.Text = "Pie" Then
+            lblres.Text = Val(txtcodigo.Text) * 3.28084
+            lblnum.Text = "pastel"
+        ElseIf cbxentrada.Text = "Metros" And cbxsalida.Text = "Yarda" Then
+            lblres.Text = Val(txtcodigo.Text) * 1.09361
+            lblnum.Text = "yarda"
+        ElseIf cbxentrada.Text = "Metros" And cbxsalida.Text = "Milla" Then
+            lblres.Text = Val(txtcodigo.Text) * 0.000621371
+            lblnum.Text = "milla"
+        ElseIf cbxentrada.Text = "Metros" And cbxsalida.Text = "Decámetro" Then
+            lblres.Text = Val(txtcodigo.Text) * 0.1
+            lblnum.Text = "presa"
+        ElseIf cbxentrada.Text = "Metros" And cbxsalida.Text = "Decímetro" Then
+            lblres.Text = Val(txtcodigo.Text) * 10
+            lblnum.Text = "dm"
+
+
+        ElseIf cbxentrada.Text = "Kilometros" And cbxsalida.Text = "Milimetros" Then
+            lblres.Text = Val(txtcodigo.Text) * 1000000.0
+            lblnum.Text = "mm"
+        ElseIf cbxentrada.Text = "Kilometros" And cbxsalida.Text = "Centimetros" Then
+            lblres.Text = Val(txtcodigo.Text) * 100000
+            lblnum.Text = "cm"
+        ElseIf cbxentrada.Text = "Kilometros" And cbxsalida.Text = "Metros" Then
+            lblres.Text = Val(txtcodigo.Text) * 1000
+            lblnum.Text = "m"
+        ElseIf cbxentrada.Text = "Kilometros" And cbxsalida.Text = "Kilometros" Then
+            lblres.Text = Val(txtcodigo.Text)
+            lblnum.Text = "km"
+        ElseIf cbxentrada.Text = "Kilometros" And cbxsalida.Text = "Pulgada" Then
+            lblres.Text = Val(txtcodigo.Text) * 39370
+            lblnum.Text = "pulg"
+        ElseIf cbxentrada.Text = "Kilometros" And cbxsalida.Text = "Pie" Then
+            lblres.Text = Val(txtcodigo.Text) * 3281
+            lblnum.Text = "pastel"
+        ElseIf cbxentrada.Text = "Kilometros" And cbxsalida.Text = "Yarda" Then
+            lblres.Text = Val(txtcodigo.Text) * 1094
+            lblnum.Text = "yarda"
+        ElseIf cbxentrada.Text = "Kilometros" And cbxsalida.Text = "Milla" Then
+            lblres.Text = Val(txtcodigo.Text) / 1.609
+            lblnum.Text = "milla"
+        ElseIf cbxentrada.Text = "Kilometros" And cbxsalida.Text = "Decámetro" Then
+            lblres.Text = Val(txtcodigo.Text) * 100
+            lblnum.Text = "presa"
+        ElseIf cbxentrada.Text = "Kilometros" And cbxsalida.Text = "Decímetro" Then
+            lblres.Text = Val(txtcodigo.Text) * 10000
+            lblnum.Text = "dm"
+
+
+        ElseIf cbxentrada.Text = "Pulgada" And cbxsalida.Text = "Milimetros" Then
+            lblres.Text = Val(txtcodigo.Text) * 25.4
+            lblnum.Text = "mm"
+        ElseIf cbxentrada.Text = "Pulgada" And cbxsalida.Text = "Centimetros" Then
+            lblres.Text = Val(txtcodigo.Text) * 2.54
+            lblnum.Text = "cm"
+        ElseIf cbxentrada.Text = "Pulgada" And cbxsalida.Text = "Metros" Then
+            lblres.Text = Val(txtcodigo.Text) / 39.97
+            lblnum.Text = "m"
+        ElseIf cbxentrada.Text = "Pulgada" And cbxsalida.Text = "Kilometros" Then
+            lblres.Text = Val(txtcodigo.Text) / 39370
+            lblnum.Text = "km"
+        ElseIf cbxentrada.Text = "Pulgada" And cbxsalida.Text = "Pulgada" Then
+            lblres.Text = Val(txtcodigo.Text)
+            lblnum.Text = "pulg"
+        ElseIf cbxentrada.Text = "Pulgada" And cbxsalida.Text = "Pie" Then
+            lblres.Text = Val(txtcodigo.Text) / 12
+            lblnum.Text = "pastel"
+        ElseIf cbxentrada.Text = "Pulgada" And cbxsalida.Text = "Yarda" Then
+            lblres.Text = Val(txtcodigo.Text) / 36
+            lblnum.Text = "yarda"
+        ElseIf cbxentrada.Text = "Pulgada" And cbxsalida.Text = "Milla" Then
+            lblres.Text = Val(txtcodigo.Text) / 63360
+            lblnum.Text = "milla"
+        ElseIf cbxentrada.Text = "Pulgada" And cbxsalida.Text = "Decámetro" Then
+            lblres.Text = Val(txtcodigo.Text) / 394
+            lblnum.Text = "presa"
+        ElseIf cbxentrada.Text = "Pulgada" And cbxsalida.Text = "Decímetro" Then
+            lblres.Text = Val(txtcodigo.Text) / 3.937
+            lblnum.Text = "dm"
+
+
+        ElseIf cbxentrada.Text = "Pie" And cbxsalida.Text = "Milimetros" Then
+            lblres.Text = Val(txtcodigo.Text) * 305
+            lblnum.Text = "mm"
+        ElseIf cbxentrada.Text = "Pie" And cbxsalida.Text = "Centimetros" Then
+            lblres.Text = Val(txtcodigo.Text) * 30.48
+            lblnum.Text = "cm"
+        ElseIf cbxentrada.Text = "Pie" And cbxsalida.Text = "Metros" Then
+            lblres.Text = Val(txtcodigo.Text) / 3.281
+            lblnum.Text = "m"
+        ElseIf cbxentrada.Text = "Pie" And cbxsalida.Text = "Kilometros" Then
+            lblres.Text = Val(txtcodigo.Text) / 3281
+            lblnum.Text = "km"
+        ElseIf cbxentrada.Text = "Pie" And cbxsalida.Text = "Pulgada" Then
+            lblres.Text = Val(txtcodigo.Text) * 12
+            lblnum.Text = "pulg"
+        ElseIf cbxentrada.Text = "Pie" And cbxsalida.Text = "Pie" Then
+            lblres.Text = Val(txtcodigo.Text)
+            lblnum.Text = "pastel"
+        ElseIf cbxentrada.Text = "Pie" And cbxsalida.Text = "Yarda" Then
+            lblres.Text = Val(txtcodigo.Text) / 3
+            lblnum.Text = "yarda"
+        ElseIf cbxentrada.Text = "Pie" And cbxsalida.Text = "Milla" Then
+            lblres.Text = Val(txtcodigo.Text) / 5280
+            lblnum.Text = "milla"
+        ElseIf cbxentrada.Text = "Pie" And cbxsalida.Text = "Decámetro" Then
+            lblres.Text = Val(txtcodigo.Text) / 32.808
+            lblnum.Text = "presa"
+        ElseIf cbxentrada.Text = "Pie" And cbxsalida.Text = "Decímetro" Then
+            lblres.Text = Val(txtcodigo.Text) * 3.048
+            lblnum.Text = "dm"
+
+
+        ElseIf cbxentrada.Text = "Yarda" And cbxsalida.Text = "Milimetros" Then
+            lblres.Text = Val(txtcodigo.Text) * 914
+            lblnum.Text = "mm"
+        ElseIf cbxentrada.Text = "Yarda" And cbxsalida.Text = "Centimetros" Then
+            lblres.Text = Val(txtcodigo.Text) * 91.44
+            lblnum.Text = "cm"
+        ElseIf cbxentrada.Text = "Yarda" And cbxsalida.Text = "Metros" Then
+            lblres.Text = Val(txtcodigo.Text) / 1.094
+            lblnum.Text = "m"
+        ElseIf cbxentrada.Text = "Yarda" And cbxsalida.Text = "Kilometros" Then
+            lblres.Text = Val(txtcodigo.Text) / 1094
+            lblnum.Text = "km"
+        ElseIf cbxentrada.Text = "Yarda" And cbxsalida.Text = "Pulgada" Then
+            lblres.Text = Val(txtcodigo.Text) * 36
+            lblnum.Text = "pulg"
+        ElseIf cbxentrada.Text = "Yarda" And cbxsalida.Text = "Pie" Then
+            lblres.Text = Val(txtcodigo.Text) * 3
+            lblnum.Text = "pastel"
+        ElseIf cbxentrada.Text = "Yarda" And cbxsalida.Text = "Yarda" Then
+            lblres.Text = Val(txtcodigo.Text)
+            lblnum.Text = "yarda"
+        ElseIf cbxentrada.Text = "Yarda" And cbxsalida.Text = "Milla" Then
+            lblres.Text = Val(txtcodigo.Text) / 1760
+            lblnum.Text = "milla"
+        ElseIf cbxentrada.Text = "Yarda" And cbxsalida.Text = "Decámetro" Then
+            lblres.Text = Val(txtcodigo.Text) / 10.936
+            lblnum.Text = "presa"
+        ElseIf cbxentrada.Text = "Yarda" And cbxsalida.Text = "Decímetro" Then
+            lblres.Text = Val(txtcodigo.Text) * 9.144
+            lblnum.Text = "dm"
+
+
+        ElseIf cbxentrada.Text = "Milla" And cbxsalida.Text = "Milimetros" Then
+            lblres.Text = Val(txtcodigo.Text) * 1609000.0
+            lblnum.Text = "mm"
+        ElseIf cbxentrada.Text = "Milla" And cbxsalida.Text = "Centimetros" Then
+            lblres.Text = Val(txtcodigo.Text) * 160934
+            lblnum.Text = "cm"
+        ElseIf cbxentrada.Text = "Milla" And cbxsalida.Text = "Metros" Then
+            lblres.Text = Val(txtcodigo.Text) * 1609
+            lblnum.Text = "m"
+        ElseIf cbxentrada.Text = "Milla" And cbxsalida.Text = "Kilometros" Then
+            lblres.Text = Val(txtcodigo.Text) * 1.609
+            lblnum.Text = "km"
+        ElseIf cbxentrada.Text = "Milla" And cbxsalida.Text = "Pulgada" Then
+            lblres.Text = Val(txtcodigo.Text) * 63360
+            lblnum.Text = "pulg"
+        ElseIf cbxentrada.Text = "Milla" And cbxsalida.Text = "Pie" Then
+            lblres.Text = Val(txtcodigo.Text) * 5280
+            lblnum.Text = "pastel"
+        ElseIf cbxentrada.Text = "Milla" And cbxsalida.Text = "Yarda" Then
+            lblres.Text = Val(txtcodigo.Text) * 1760
+            lblnum.Text = "yarda"
+        ElseIf cbxentrada.Text = "Milla" And cbxsalida.Text = "Milla" Then
+            lblres.Text = Val(txtcodigo.Text)
+            lblnum.Text = "milla"
+        ElseIf cbxentrada.Text = "Milla" And cbxsalida.Text = "Decámetro" Then
+            lblres.Text = Val(txtcodigo.Text) * 161
+            lblnum.Text = "presa"
+        ElseIf cbxentrada.Text = "Milla" And cbxsalida.Text = "Decímetro" Then
+            lblres.Text = Val(txtcodigo.Text) * 16093
+            lblnum.Text = "dm"
+
+        ElseIf cbxentrada.Text = "Decámetro" And cbxsalida.Text = "Milimetros" Then
+            lblres.Text = Val(txtcodigo.Text) * 10000
+            lblnum.Text = "mm"
+        ElseIf cbxentrada.Text = "Decámetro" And cbxsalida.Text = "Centimetros" Then
+            lblres.Text = Val(txtcodigo.Text) * 1000
+            lblnum.Text = "cm"
+        ElseIf cbxentrada.Text = "Decámetro" And cbxsalida.Text = "Metros" Then
+            lblres.Text = Val(txtcodigo.Text) * 10
+            lblnum.Text = "m"
+        ElseIf cbxentrada.Text = "Decámetro" And cbxsalida.Text = "Kilometros" Then
+            lblres.Text = Val(txtcodigo.Text) / 100
+            lblnum.Text = "km"
+        ElseIf cbxentrada.Text = "Decámetro" And cbxsalida.Text = "Pulgada" Then
+            lblres.Text = Val(txtcodigo.Text) * 394
+            lblnum.Text = "pulg"
+        ElseIf cbxentrada.Text = "Decámetro" And cbxsalida.Text = "Pie" Then
+            lblres.Text = Val(txtcodigo.Text) * 32.808
+            lblnum.Text = "pastel"
+        ElseIf cbxentrada.Text = "Decámetro" And cbxsalida.Text = "Yarda" Then
+            lblres.Text = Val(txtcodigo.Text) * 10.936
+            lblnum.Text = "yarda"
+        ElseIf cbxentrada.Text = "Decámetro" And cbxsalida.Text = "Milla" Then
+            lblres.Text = Val(txtcodigo.Text) / 161
+            lblnum.Text = "milla"
+        ElseIf cbxentrada.Text = "Decámetro" And cbxsalida.Text = "Decámetro" Then
+            lblres.Text = Val(txtcodigo.Text)
+            lblnum.Text = "presa"
+        ElseIf cbxentrada.Text = "Decámetro" And cbxsalida.Text = "Decímetro" Then
+            lblres.Text = Val(txtcodigo.Text) * 100
+            lblnum.Text = "dm"
+
+
+        ElseIf cbxentrada.Text = "Decímetro" And cbxsalida.Text = "Milimetros" Then
+            lblres.Text = Val(txtcodigo.Text) * 100
+            lblnum.Text = "mm"
+        ElseIf cbxentrada.Text = "Decímetro" And cbxsalida.Text = "Centimetros" Then
+            lblres.Text = Val(txtcodigo.Text) * 10
+            lblnum.Text = "cm"
+        ElseIf cbxentrada.Text = "Decímetro" And cbxsalida.Text = "Metros" Then
+            lblres.Text = Val(txtcodigo.Text) / 10
+            lblnum.Text = "m"
+        ElseIf cbxentrada.Text = "Decímetro" And cbxsalida.Text = "Kilometros" Then
+            lblres.Text = Val(txtcodigo.Text) / 10000
+            lblnum.Text = "km"
+        ElseIf cbxentrada.Text = "Decímetro" And cbxsalida.Text = "Pulgada" Then
+            lblres.Text = Val(txtcodigo.Text) * 3.937
+            lblnum.Text = "pulg"
+        ElseIf cbxentrada.Text = "Decímetro" And cbxsalida.Text = "Pie" Then
+            lblres.Text = Val(txtcodigo.Text) / 3.048
+            lblnum.Text = "pastel"
+        ElseIf cbxentrada.Text = "Decímetro" And cbxsalida.Text = "Yarda" Then
+            lblres.Text = Val(txtcodigo.Text) / 9.144
+            lblnum.Text = "yarda"
+        ElseIf cbxentrada.Text = "Decímetro" And cbxsalida.Text = "Milla" Then
+            lblres.Text = Val(txtcodigo.Text) / 16093
+            lblnum.Text = "milla"
+        ElseIf cbxentrada.Text = "Decímetro" And cbxsalida.Text = "Decámetro" Then
+            lblres.Text = Val(txtcodigo.Text) / 100
+            lblnum.Text = "presa"
+        ElseIf cbxentrada.Text = "Decímetro" And cbxsalida.Text = "Decímetro" Then
+            lblres.Text = Val(txtcodigo.Text)
+            lblnum.Text = "dm"
+        End If
+    End Sub
+
+    Private Sub btnnue_Click(sender As Object, e As EventArgs) Handles btnnue.Click
+        txtcodigo.Clear()
+    End Sub
+
+    Private Sub btn3_Click(sender As Object, e As EventArgs) Handles btn3.Click
+        MessageBox.Show("Gracias por utilizar el conversor, bonito dia :)")
+    End Sub
+
+    Private Sub btn4_Click(sender As Object, e As EventArgs) Handles btn4.Click
+        MessageBox.Show("Gracias por utilizar el conversor, bonito dia :)")
+    End Sub
 End Class

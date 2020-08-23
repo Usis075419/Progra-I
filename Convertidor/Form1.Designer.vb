@@ -27,7 +27,7 @@ Partial Class Form1
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.cbxselect2 = New System.Windows.Forms.ComboBox()
         Me.cbxselect = New System.Windows.Forms.ComboBox()
-        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
+        Me.cbxentrada = New System.Windows.Forms.ComboBox()
         Me.ComboBox11 = New System.Windows.Forms.ComboBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
@@ -56,17 +56,18 @@ Partial Class Form1
         Me.btnnew = New System.Windows.Forms.Button()
         Me.lblr = New System.Windows.Forms.Label()
         Me.btnconver = New System.Windows.Forms.Button()
-        Me.lblval = New System.Windows.Forms.Label()
+        Me.lblv = New System.Windows.Forms.Label()
         Me.txtvalor3 = New System.Windows.Forms.TextBox()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.lblnum = New System.Windows.Forms.Label()
+        Me.cbxsalida = New System.Windows.Forms.ComboBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.lblres = New System.Windows.Forms.Label()
+        Me.btnlongitud = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtcodigo = New System.Windows.Forms.TextBox()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.ComboBox8 = New System.Windows.Forms.ComboBox()
         Me.Label19 = New System.Windows.Forms.Label()
@@ -86,6 +87,9 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.btnnue = New System.Windows.Forms.Button()
+        Me.btn3 = New System.Windows.Forms.Button()
+        Me.btn4 = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -160,16 +164,17 @@ Partial Class Form1
         Me.cbxselect.Tag = ""
         Me.cbxselect.Text = "Seleccione una opcion"
         '
-        'ComboBox7
+        'cbxentrada
         '
-        Me.ComboBox7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.ComboBox7.FormattingEnabled = True
-        Me.ComboBox7.Items.AddRange(New Object() {"Pulgada ", "Pie", "Yarda ", "Milla", "Nanómetro", "Micrómetro", "Centímetro", "Metro", "Barra (rd)", "Mano (ft)"})
-        Me.ComboBox7.Location = New System.Drawing.Point(141, 23)
-        Me.ComboBox7.Margin = New System.Windows.Forms.Padding(4)
-        Me.ComboBox7.Name = "ComboBox7"
-        Me.ComboBox7.Size = New System.Drawing.Size(160, 24)
-        Me.ComboBox7.TabIndex = 17
+        Me.cbxentrada.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.cbxentrada.FormattingEnabled = True
+        Me.cbxentrada.Items.AddRange(New Object() {"Milimetros", "Centimetros", "Metros", "Kilometros", "Pulgada", "Pie", "Yarda", "Milla", "Decámetro", "Decímetro"})
+        Me.cbxentrada.Location = New System.Drawing.Point(141, 23)
+        Me.cbxentrada.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbxentrada.Name = "cbxentrada"
+        Me.cbxentrada.Size = New System.Drawing.Size(160, 24)
+        Me.cbxentrada.TabIndex = 17
+        Me.cbxentrada.Text = "seleccione una opcion"
         '
         'ComboBox11
         '
@@ -440,6 +445,7 @@ Partial Class Form1
         'TabPage3
         '
         Me.TabPage3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TabPage3.Controls.Add(Me.btn3)
         Me.TabPage3.Controls.Add(Me.lbl_a)
         Me.TabPage3.Controls.Add(Me.lbl_de)
         Me.TabPage3.Controls.Add(Me.Panel3)
@@ -480,7 +486,7 @@ Partial Class Form1
         Me.Panel3.Controls.Add(Me.btnnew)
         Me.Panel3.Controls.Add(Me.lblr)
         Me.Panel3.Controls.Add(Me.btnconver)
-        Me.Panel3.Controls.Add(Me.lblval)
+        Me.Panel3.Controls.Add(Me.lblv)
         Me.Panel3.Controls.Add(Me.txtvalor3)
         Me.Panel3.Location = New System.Drawing.Point(105, 90)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
@@ -526,16 +532,16 @@ Partial Class Form1
         Me.btnconver.Text = "Convertidor"
         Me.btnconver.UseVisualStyleBackColor = True
         '
-        'lblval
+        'lblv
         '
-        Me.lblval.AutoSize = True
-        Me.lblval.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblval.Location = New System.Drawing.Point(88, 6)
-        Me.lblval.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblval.Name = "lblval"
-        Me.lblval.Size = New System.Drawing.Size(41, 17)
-        Me.lblval.TabIndex = 27
-        Me.lblval.Text = "Valor"
+        Me.lblv.AutoSize = True
+        Me.lblv.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblv.Location = New System.Drawing.Point(88, 6)
+        Me.lblv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblv.Name = "lblv"
+        Me.lblv.Size = New System.Drawing.Size(41, 17)
+        Me.lblv.TabIndex = 27
+        Me.lblv.Text = "Valor"
         '
         'txtvalor3
         '
@@ -550,11 +556,13 @@ Partial Class Form1
         'TabPage4
         '
         Me.TabPage4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.TabPage4.Controls.Add(Me.ComboBox2)
+        Me.TabPage4.Controls.Add(Me.btn4)
+        Me.TabPage4.Controls.Add(Me.lblnum)
+        Me.TabPage4.Controls.Add(Me.cbxsalida)
         Me.TabPage4.Controls.Add(Me.Label18)
         Me.TabPage4.Controls.Add(Me.Label14)
         Me.TabPage4.Controls.Add(Me.Panel4)
-        Me.TabPage4.Controls.Add(Me.ComboBox7)
+        Me.TabPage4.Controls.Add(Me.cbxentrada)
         Me.TabPage4.Location = New System.Drawing.Point(4, 25)
         Me.TabPage4.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage4.Name = "TabPage4"
@@ -562,16 +570,25 @@ Partial Class Form1
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Longitud"
         '
-        'ComboBox2
+        'lblnum
         '
-        Me.ComboBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Pulgada ", "Pie", "Yarda ", "Milla", "Nanómetro", "Micrómetro", "Centímetro", "Metro", "Barra (rd)", "Mano (ft)"})
-        Me.ComboBox2.Location = New System.Drawing.Point(400, 27)
-        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(160, 24)
-        Me.ComboBox2.TabIndex = 39
+        Me.lblnum.AutoSize = True
+        Me.lblnum.Location = New System.Drawing.Point(250, 295)
+        Me.lblnum.Name = "lblnum"
+        Me.lblnum.Size = New System.Drawing.Size(0, 17)
+        Me.lblnum.TabIndex = 40
+        '
+        'cbxsalida
+        '
+        Me.cbxsalida.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.cbxsalida.FormattingEnabled = True
+        Me.cbxsalida.Items.AddRange(New Object() {"Milimetros", "Centimetros", "Metros", "Kilometros", "Pulgada", "Pie", "Yarda", "Milla", "Decámetro", "Decímetro"})
+        Me.cbxsalida.Location = New System.Drawing.Point(400, 27)
+        Me.cbxsalida.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbxsalida.Name = "cbxsalida"
+        Me.cbxsalida.Size = New System.Drawing.Size(160, 24)
+        Me.cbxsalida.TabIndex = 39
+        Me.cbxsalida.Text = "seleccione una opcion "
         '
         'Label18
         '
@@ -598,37 +615,38 @@ Partial Class Form1
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.Transparent
-        Me.Panel4.Controls.Add(Me.Label9)
-        Me.Panel4.Controls.Add(Me.Button4)
+        Me.Panel4.Controls.Add(Me.btnnue)
+        Me.Panel4.Controls.Add(Me.lblres)
+        Me.Panel4.Controls.Add(Me.btnlongitud)
         Me.Panel4.Controls.Add(Me.Label10)
-        Me.Panel4.Controls.Add(Me.TextBox4)
+        Me.Panel4.Controls.Add(Me.txtcodigo)
         Me.Panel4.Location = New System.Drawing.Point(105, 90)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(483, 192)
         Me.Panel4.TabIndex = 36
         '
-        'Label9
+        'lblres
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label9.Location = New System.Drawing.Point(137, 174)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(74, 19)
-        Me.Label9.TabIndex = 26
-        Me.Label9.Text = "Resultado"
+        Me.lblres.AutoSize = True
+        Me.lblres.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblres.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblres.Location = New System.Drawing.Point(148, 173)
+        Me.lblres.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblres.Name = "lblres"
+        Me.lblres.Size = New System.Drawing.Size(74, 19)
+        Me.lblres.TabIndex = 26
+        Me.lblres.Text = "Resultado"
         '
-        'Button4
+        'btnlongitud
         '
-        Me.Button4.Location = New System.Drawing.Point(117, 60)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(100, 28)
-        Me.Button4.TabIndex = 25
-        Me.Button4.Text = "Convertidor"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnlongitud.Location = New System.Drawing.Point(117, 60)
+        Me.btnlongitud.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnlongitud.Name = "btnlongitud"
+        Me.btnlongitud.Size = New System.Drawing.Size(100, 28)
+        Me.btnlongitud.TabIndex = 25
+        Me.btnlongitud.Text = "Convertidor"
+        Me.btnlongitud.UseVisualStyleBackColor = True
         '
         'Label10
         '
@@ -641,15 +659,15 @@ Partial Class Form1
         Me.Label10.TabIndex = 27
         Me.Label10.Text = "Valor"
         '
-        'TextBox4
+        'txtcodigo
         '
-        Me.TextBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.Location = New System.Drawing.Point(137, 4)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(133, 22)
-        Me.TextBox4.TabIndex = 24
+        Me.txtcodigo.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.txtcodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtcodigo.Location = New System.Drawing.Point(137, 4)
+        Me.txtcodigo.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtcodigo.Name = "txtcodigo"
+        Me.txtcodigo.Size = New System.Drawing.Size(133, 22)
+        Me.txtcodigo.TabIndex = 24
         '
         'TabPage5
         '
@@ -870,6 +888,33 @@ Partial Class Form1
         Me.TextBox1.Size = New System.Drawing.Size(133, 22)
         Me.TextBox1.TabIndex = 24
         '
+        'btnnue
+        '
+        Me.btnnue.Location = New System.Drawing.Point(268, 60)
+        Me.btnnue.Name = "btnnue"
+        Me.btnnue.Size = New System.Drawing.Size(90, 28)
+        Me.btnnue.TabIndex = 28
+        Me.btnnue.Text = "Nuevo"
+        Me.btnnue.UseVisualStyleBackColor = True
+        '
+        'btn3
+        '
+        Me.btn3.Location = New System.Drawing.Point(242, 311)
+        Me.btn3.Name = "btn3"
+        Me.btn3.Size = New System.Drawing.Size(75, 23)
+        Me.btn3.TabIndex = 0
+        Me.btn3.Text = "SALIR"
+        Me.btn3.UseVisualStyleBackColor = True
+        '
+        'btn4
+        '
+        Me.btn4.Location = New System.Drawing.Point(253, 295)
+        Me.btn4.Name = "btn4"
+        Me.btn4.Size = New System.Drawing.Size(75, 23)
+        Me.btn4.TabIndex = 41
+        Me.btn4.Text = "SALIR"
+        Me.btn4.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -909,7 +954,7 @@ Partial Class Form1
     End Sub
     Friend WithEvents ComboBox11 As ComboBox
     Friend WithEvents cboa As ComboBox
-    Friend WithEvents ComboBox7 As ComboBox
+    Friend WithEvents cbxentrada As ComboBox
     Friend WithEvents cbxselect As ComboBox
     Friend WithEvents ComboBox4 As ComboBox
     Friend WithEvents ComboBox3 As ComboBox
@@ -941,14 +986,14 @@ Partial Class Form1
     Friend WithEvents Panel3 As Panel
     Friend WithEvents lblr As Label
     Friend WithEvents btnconver As Button
-    Friend WithEvents lblval As Label
+    Friend WithEvents lblv As Label
     Friend WithEvents txtvalor3 As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Button4 As Button
+    Friend WithEvents lblres As Label
+    Friend WithEvents btnlongitud As Button
     Friend WithEvents Label10 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtcodigo As TextBox
     Friend WithEvents Label15 As Label
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Label11 As Label
@@ -964,11 +1009,15 @@ Partial Class Form1
     Friend WithEvents Label18 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents cbxsalida As ComboBox
     Friend WithEvents ComboBox8 As ComboBox
     Friend WithEvents ComboBox9 As ComboBox
     Friend WithEvents ComboBox10 As ComboBox
     Friend WithEvents Button6 As Button
     Friend WithEvents btnnuevo As Button
     Friend WithEvents btnnew As Button
+    Friend WithEvents lblnum As Label
+    Friend WithEvents btn3 As Button
+    Friend WithEvents btn4 As Button
+    Friend WithEvents btnnue As Button
 End Class
