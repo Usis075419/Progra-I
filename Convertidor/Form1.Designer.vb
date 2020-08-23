@@ -29,6 +29,12 @@ Partial Class Form1
         Me.cbxselect = New System.Windows.Forms.ComboBox()
         Me.cbxentrada = New System.Windows.Forms.ComboBox()
         Me.ComboBox11 = New System.Windows.Forms.ComboBox()
+        Me.cboa2 = New System.Windows.Forms.ComboBox()
+        Me.cbode2 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
+        Me.CboTiempo1 = New System.Windows.Forms.ComboBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Button6 = New System.Windows.Forms.Button()
@@ -38,17 +44,18 @@ Partial Class Form1
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnnuevo = New System.Windows.Forms.Button()
         Me.lblrespuesta = New System.Windows.Forms.Label()
+        Me.lblrespuestaDivisas = New System.Windows.Forms.Label()
         Me.BtnConvertidormonedas = New System.Windows.Forms.Button()
         Me.LblValor = New System.Windows.Forms.Label()
-        Me.TxtValor = New System.Windows.Forms.TextBox()
+        Me.TxtValorDivisas = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblrespuesta2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtvalor2 = New System.Windows.Forms.TextBox()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.lbl_a = New System.Windows.Forms.Label()
         Me.lbl_de = New System.Windows.Forms.Label()
@@ -69,27 +76,39 @@ Partial Class Form1
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtcodigo = New System.Windows.Forms.TextBox()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
-        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
+        Me.BtnSalir = New System.Windows.Forms.Button()
+        Me.CboAlma2 = New System.Windows.Forms.ComboBox()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Btnnvo = New System.Windows.Forms.Button()
+        Me.LblRespTemp = New System.Windows.Forms.Label()
+        Me.BtnConvertirTemp = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
+        Me.TxtValTemp = New System.Windows.Forms.TextBox()
+        Me.CboAlma1 = New System.Windows.Forms.ComboBox()
         Me.TabPage6 = New System.Windows.Forms.TabPage()
-        Me.ComboBox10 = New System.Windows.Forms.ComboBox()
+        Me.BnSalis = New System.Windows.Forms.Button()
+        Me.CboTiempo2 = New System.Windows.Forms.ComboBox()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.BtnNewis = New System.Windows.Forms.Button()
+        Me.LblTiemporesultante = New System.Windows.Forms.Label()
+        Me.BtnConversortiempo = New System.Windows.Forms.Button()
+    
         Me.Label5 = New System.Windows.Forms.Label()
+    
+
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.btnnue = New System.Windows.Forms.Button()
         Me.btn3 = New System.Windows.Forms.Button()
-        Me.btn4 = New System.Windows.Forms.Button()
+        Me.btn4 = New System.Windows.Forms.Button()   
+      Me.txtb7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.lblno = New System.Windows.Forms.Label()
+    Me.TxtIntroductor = New System.Windows.Forms.TextBox()
+
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -108,6 +127,7 @@ Partial Class Form1
         'cboa
         '
         Me.cboa.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+
         Me.cboa.FormattingEnabled = True
         Me.cboa.Items.AddRange(New Object() {"Dolar", "Euro", "Yen", "Peso mx", "Dolar aus", "Franco", "Dolar c", "Afgani", "Peso Chileno", "Colon cr"})
         Me.cboa.Location = New System.Drawing.Point(381, 25)
@@ -116,10 +136,28 @@ Partial Class Form1
         Me.cboa.Size = New System.Drawing.Size(187, 24)
         Me.cboa.TabIndex = 13
         Me.cboa.Text = "Seleccione una Opcion"
+        Me.cboa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboa.FormattingEnabled = True
+        Me.cboa.Items.AddRange(New Object() {"Dolar", "Euro", "Yen", "Peso mx", "Dolar aus", "Franco", "Dolar c", "Afgani", "Peso Chileno", "Colon cr"})
+        Me.cboa.Location = New System.Drawing.Point(286, 20)
+        Me.cboa.Name = "cboa"
+        Me.cboa.Size = New System.Drawing.Size(141, 21)
+        Me.cboa.TabIndex = 13
         '
-        'ComboBox4
+        'cboa2
         '
+
+        Me.cboa2.AutoCompleteCustomSource.AddRange(New String() {"Tonelada", "Decagramo", "Kilogramo", "Hectogramo", "Gramo", "Quilate", "Centigramo", "Miligramo", "Libra", "Quintal"})
+        Me.cboa2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.cboa2.FormattingEnabled = True
+        Me.cboa2.Items.AddRange(New Object() {"Tonelada", "Decagramo", "Kilogramo", "Hectogramo", "Gramo", "Quilate", "Centigramo", "Miligramo", "Libra", "Quintal"})
+        Me.cboa2.Location = New System.Drawing.Point(269, 22)
+        Me.cboa2.Name = "cboa2"
+        Me.cboa2.Size = New System.Drawing.Size(121, 21)
+        Me.cboa2.TabIndex = 14
+
         Me.ComboBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox4.FormattingEnabled = True
         Me.ComboBox4.Items.AddRange(New Object() {"Tonelada (t)", "Kilonewton (kn)", "Kilogramo (kg)", "Hectogramo (hg)", "Gramo", "Quilate", "Centigramo", "Miligramo", "Libra ", "Quintal"})
         Me.ComboBox4.Location = New System.Drawing.Point(359, 27)
@@ -127,10 +165,22 @@ Partial Class Form1
         Me.ComboBox4.Name = "ComboBox4"
         Me.ComboBox4.Size = New System.Drawing.Size(160, 24)
         Me.ComboBox4.TabIndex = 14
+
+      
+        'cbode2
         '
-        'ComboBox3
-        '
+
+        Me.cbode2.AutoCompleteCustomSource.AddRange(New String() {"Tonelada", "Decagramo", "Kilogramo", "Hectogramo", "Gramo", "Quilate", "Centigramo", "Miligramo", "Libra", "Quintal"})
+        Me.cbode2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.cbode2.FormattingEnabled = True
+        Me.cbode2.Items.AddRange(New Object() {"Tonelada", "Decagramo", "Kilogramo", "Hectogramo", "Gramo", "Quilate", "Centigramo", "Miligramo", "Libra", "Quintal"})
+        Me.cbode2.Location = New System.Drawing.Point(88, 22)
+        Me.cbode2.Name = "cbode2"
+        Me.cbode2.Size = New System.Drawing.Size(121, 21)
+        Me.cbode2.TabIndex = 13
+
         Me.ComboBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Items.AddRange(New Object() {"Tonelada (t)", "Kilonewton (kn)", "Kilogramo (kg)", "Hectograma (hg)", "Gramo ", "Quilate", "Centigramo", "Miligramo", "Libra", "Quintal"})
         Me.ComboBox3.Location = New System.Drawing.Point(117, 27)
@@ -138,6 +188,7 @@ Partial Class Form1
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(160, 24)
         Me.ComboBox3.TabIndex = 13
+
         '
         'cbxselect2
         '
@@ -175,8 +226,40 @@ Partial Class Form1
         Me.cbxentrada.Size = New System.Drawing.Size(160, 24)
         Me.cbxentrada.TabIndex = 17
         Me.cbxentrada.Text = "seleccione una opcion"
+        'ComboBox6
         '
-        'ComboBox11
+        Me.ComboBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.ComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox6.FormattingEnabled = True
+        Me.ComboBox6.Items.AddRange(New Object() {"Galon", "Litro", "Cuarto (qt)", "Barril", "Metro Cubico", "Mililitro", "Pie Cubico", "Pulgada Cubica", "Yarda Cubica", "Microlitro"})
+        Me.ComboBox6.Location = New System.Drawing.Point(309, 25)
+        Me.ComboBox6.Name = "ComboBox6"
+        Me.ComboBox6.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox6.TabIndex = 16
+        '
+        'ComboBox5
+        '
+        Me.ComboBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox5.FormattingEnabled = True
+        Me.ComboBox5.Items.AddRange(New Object() {"Galon", "Litro", "Cuarto (qt)", "Barril", "Metro cubico", "Mililitro", "Pie Cubico", "Pulgada Cubica", "Yarda Cubica", "Microlitro"})
+        Me.ComboBox5.Location = New System.Drawing.Point(99, 25)
+        Me.ComboBox5.Name = "ComboBox5"
+        Me.ComboBox5.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox5.TabIndex = 15
+        '
+        'ComboBox7
+        '
+        Me.ComboBox7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.ComboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox7.FormattingEnabled = True
+        Me.ComboBox7.Items.AddRange(New Object() {"Pulgada ", "Pie", "Yarda ", "Milla", "Nanómetro", "Micrómetro", "Centímetro", "Metro", "Barra (rd)", "Mano (ft)"})
+        Me.ComboBox7.Location = New System.Drawing.Point(106, 19)
+        Me.ComboBox7.Name = "ComboBox7"
+        Me.ComboBox7.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox7.TabIndex = 17
+        '
+        'CboTiempo1
         '
         Me.ComboBox11.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.ComboBox11.FormattingEnabled = True
@@ -186,6 +269,14 @@ Partial Class Form1
         Me.ComboBox11.Name = "ComboBox11"
         Me.ComboBox11.Size = New System.Drawing.Size(160, 24)
         Me.ComboBox11.TabIndex = 21
+        Me.CboTiempo1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.CboTiempo1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CboTiempo1.FormattingEnabled = True
+        Me.CboTiempo1.Items.AddRange(New Object() {"Nanosegundos", "Microsegundo", "Milisegundo", "Segundo", "Minuto", "Hora", "Dia ", "Semana ", "Mes", "Año"})
+        Me.CboTiempo1.Location = New System.Drawing.Point(118, 25)
+        Me.CboTiempo1.Name = "CboTiempo1"
+        Me.CboTiempo1.Size = New System.Drawing.Size(121, 21)
+        Me.CboTiempo1.TabIndex = 21
         '
         'TabControl1
         '
@@ -213,6 +304,7 @@ Partial Class Form1
         Me.TabPage1.Controls.Add(Me.cboa)
         Me.TabPage1.Location = New System.Drawing.Point(4, 25)
         Me.TabPage1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Size = New System.Drawing.Size(696, 376)
@@ -231,6 +323,9 @@ Partial Class Form1
         Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(100, 28)
+        Me.Button6.Location = New System.Drawing.Point(218, 274)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 36
         Me.Button6.Text = "SALIR"
         Me.Button6.UseVisualStyleBackColor = False
@@ -246,6 +341,13 @@ Partial Class Form1
         Me.cbode.Size = New System.Drawing.Size(187, 24)
         Me.cbode.TabIndex = 35
         Me.cbode.Text = "Seleccione una Opcion"
+        Me.cbode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbode.FormattingEnabled = True
+        Me.cbode.Items.AddRange(New Object() {"Dolar", "Euro", "Yen", "Peso mx", "Dolar aus", "Franco", "Dolar c", "Afgani", "Peso Chileno", "Colon cr"})
+        Me.cbode.Location = New System.Drawing.Point(79, 20)
+        Me.cbode.Name = "cbode"
+        Me.cbode.Size = New System.Drawing.Size(141, 21)
+        Me.cbode.TabIndex = 35
         '
         'LblDe
         '
@@ -279,6 +381,11 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.TxtValor)
         Me.Panel1.Location = New System.Drawing.Point(105, 90)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel1.Controls.Add(Me.lblrespuestaDivisas)
+        Me.Panel1.Controls.Add(Me.BtnConvertidormonedas)
+        Me.Panel1.Controls.Add(Me.LblValor)
+        Me.Panel1.Controls.Add(Me.TxtValorDivisas)
+        Me.Panel1.Location = New System.Drawing.Point(79, 73)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(483, 192)
         Me.Panel1.TabIndex = 34
@@ -295,6 +402,9 @@ Partial Class Form1
         Me.btnnuevo.Margin = New System.Windows.Forms.Padding(4)
         Me.btnnuevo.Name = "btnnuevo"
         Me.btnnuevo.Size = New System.Drawing.Size(100, 28)
+        Me.btnnuevo.Location = New System.Drawing.Point(207, 52)
+        Me.btnnuevo.Name = "btnnuevo"
+        Me.btnnuevo.Size = New System.Drawing.Size(75, 23)
         Me.btnnuevo.TabIndex = 29
         Me.btnnuevo.Text = "NUEVO"
         Me.btnnuevo.UseVisualStyleBackColor = False
@@ -310,6 +420,16 @@ Partial Class Form1
         Me.lblrespuesta.Size = New System.Drawing.Size(74, 19)
         Me.lblrespuesta.TabIndex = 26
         Me.lblrespuesta.Text = "Resultado"
+        'lblrespuestaDivisas
+        '
+        Me.lblrespuestaDivisas.AutoSize = True
+        Me.lblrespuestaDivisas.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblrespuestaDivisas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblrespuestaDivisas.Location = New System.Drawing.Point(130, 141)
+        Me.lblrespuestaDivisas.Name = "lblrespuestaDivisas"
+        Me.lblrespuestaDivisas.Size = New System.Drawing.Size(57, 15)
+        Me.lblrespuestaDivisas.TabIndex = 26
+        Me.lblrespuestaDivisas.Text = "Resultado"
         '
         'BtnConvertidormonedas
         '
@@ -323,6 +443,9 @@ Partial Class Form1
         Me.BtnConvertidormonedas.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnConvertidormonedas.Name = "BtnConvertidormonedas"
         Me.BtnConvertidormonedas.Size = New System.Drawing.Size(112, 28)
+        Me.BtnConvertidormonedas.Location = New System.Drawing.Point(66, 52)
+        Me.BtnConvertidormonedas.Name = "BtnConvertidormonedas"
+        Me.BtnConvertidormonedas.Size = New System.Drawing.Size(84, 23)
         Me.BtnConvertidormonedas.TabIndex = 25
         Me.BtnConvertidormonedas.Text = "CONVERTIR"
         Me.BtnConvertidormonedas.UseVisualStyleBackColor = False
@@ -333,12 +456,13 @@ Partial Class Form1
         Me.LblValor.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.LblValor.Location = New System.Drawing.Point(103, 6)
         Me.LblValor.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblValor.Location = New System.Drawing.Point(77, 5)
         Me.LblValor.Name = "LblValor"
         Me.LblValor.Size = New System.Drawing.Size(41, 17)
         Me.LblValor.TabIndex = 27
         Me.LblValor.Text = "Valor"
         '
-        'TxtValor
+        'TxtValorDivisas
         '
         Me.TxtValor.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.TxtValor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -347,10 +471,17 @@ Partial Class Form1
         Me.TxtValor.Name = "TxtValor"
         Me.TxtValor.Size = New System.Drawing.Size(133, 22)
         Me.TxtValor.TabIndex = 24
+        Me.TxtValorDivisas.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TxtValorDivisas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtValorDivisas.Location = New System.Drawing.Point(130, 3)
+        Me.TxtValorDivisas.Name = "TxtValorDivisas"
+        Me.TxtValorDivisas.Size = New System.Drawing.Size(100, 20)
+        Me.TxtValorDivisas.TabIndex = 24
         '
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TabPage2.Controls.Add(Me.Button8)
         Me.TabPage2.Controls.Add(Me.Label6)
         Me.TabPage2.Controls.Add(Me.Label3)
         Me.TabPage2.Controls.Add(Me.Panel2)
@@ -358,6 +489,9 @@ Partial Class Form1
         Me.TabPage2.Controls.Add(Me.ComboBox3)
         Me.TabPage2.Location = New System.Drawing.Point(4, 25)
         Me.TabPage2.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPage2.Controls.Add(Me.cboa2)
+        Me.TabPage2.Controls.Add(Me.cbode2)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Size = New System.Drawing.Size(696, 376)
@@ -389,17 +523,21 @@ Partial Class Form1
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Transparent
-        Me.Panel2.Controls.Add(Me.Label1)
+        Me.Panel2.Controls.Add(Me.lblno)
+        Me.Panel2.Controls.Add(Me.lblrespuesta2)
+        Me.Panel2.Controls.Add(Me.txtb7)
         Me.Panel2.Controls.Add(Me.Button1)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.TextBox2)
         Me.Panel2.Location = New System.Drawing.Point(105, 90)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel2.Controls.Add(Me.txtvalor2)
+        Me.Panel2.Location = New System.Drawing.Point(79, 73)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(483, 192)
         Me.Panel2.TabIndex = 35
         '
-        'Label1
+        'lblrespuesta2
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
@@ -417,8 +555,22 @@ Partial Class Form1
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 28)
+        Me.lblrespuesta2.AutoSize = True
+        Me.lblrespuesta2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblrespuesta2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblrespuesta2.Location = New System.Drawing.Point(103, 141)
+        Me.lblrespuesta2.Name = "lblrespuesta2"
+        Me.lblrespuesta2.Size = New System.Drawing.Size(57, 15)
+        Me.lblrespuesta2.TabIndex = 26
+        Me.lblrespuesta2.Text = "Resultado"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(43, 49)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(104, 23)
         Me.Button1.TabIndex = 25
-        Me.Button1.Text = "Convertidor"
+        Me.Button1.Text = "CONVERTIDOR"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label2
@@ -432,7 +584,7 @@ Partial Class Form1
         Me.Label2.TabIndex = 27
         Me.Label2.Text = "Valor"
         '
-        'TextBox2
+        'txtvalor2
         '
         Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -441,6 +593,12 @@ Partial Class Form1
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(133, 22)
         Me.TextBox2.TabIndex = 24
+        Me.txtvalor2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.txtvalor2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtvalor2.Location = New System.Drawing.Point(103, 3)
+        Me.txtvalor2.Name = "txtvalor2"
+        Me.txtvalor2.Size = New System.Drawing.Size(100, 20)
+        Me.txtvalor2.TabIndex = 24
         '
         'TabPage3
         '
@@ -589,6 +747,14 @@ Partial Class Form1
         Me.cbxsalida.Size = New System.Drawing.Size(160, 24)
         Me.cbxsalida.TabIndex = 39
         Me.cbxsalida.Text = "seleccione una opcion "
+        Me.ComboBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"Pulgada ", "Pie", "Yarda ", "Milla", "Nanómetro", "Micrómetro", "Centímetro", "Metro", "Barra (rd)", "Mano (ft)"})
+        Me.ComboBox2.Location = New System.Drawing.Point(300, 22)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox2.TabIndex = 39
         '
         'Label18
         '
@@ -672,19 +838,22 @@ Partial Class Form1
         'TabPage5
         '
         Me.TabPage5.BackColor = System.Drawing.Color.SkyBlue
-        Me.TabPage5.Controls.Add(Me.ComboBox8)
+        Me.TabPage5.Controls.Add(Me.BtnSalir)
+        Me.TabPage5.Controls.Add(Me.CboAlma2)
         Me.TabPage5.Controls.Add(Me.Label19)
         Me.TabPage5.Controls.Add(Me.Label15)
         Me.TabPage5.Controls.Add(Me.Panel5)
         Me.TabPage5.Controls.Add(Me.ComboBox9)
         Me.TabPage5.Location = New System.Drawing.Point(4, 25)
         Me.TabPage5.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPage5.Controls.Add(Me.CboAlma1)
+        Me.TabPage5.Location = New System.Drawing.Point(4, 22)
         Me.TabPage5.Name = "TabPage5"
         Me.TabPage5.Size = New System.Drawing.Size(696, 376)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Almacenamiento"
         '
-        'ComboBox8
+        'BtnSalir
         '
         Me.ComboBox8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.ComboBox8.FormattingEnabled = True
@@ -694,6 +863,24 @@ Partial Class Form1
         Me.ComboBox8.Name = "ComboBox8"
         Me.ComboBox8.Size = New System.Drawing.Size(160, 24)
         Me.ComboBox8.TabIndex = 39
+        Me.BtnSalir.BackColor = System.Drawing.Color.Lime
+        Me.BtnSalir.Location = New System.Drawing.Point(207, 260)
+        Me.BtnSalir.Name = "BtnSalir"
+        Me.BtnSalir.Size = New System.Drawing.Size(75, 23)
+        Me.BtnSalir.TabIndex = 40
+        Me.BtnSalir.Text = "Salir"
+        Me.BtnSalir.UseVisualStyleBackColor = False
+        '
+        'CboAlma2
+        '
+        Me.CboAlma2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.CboAlma2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CboAlma2.FormattingEnabled = True
+        Me.CboAlma2.Items.AddRange(New Object() {"Kilobyte", "Kilobit", "Kibibit", "Megabit", "Mebibit", "Gigabit", "Terabit", "Byte", "Gibibit", "Tebibit"})
+        Me.CboAlma2.Location = New System.Drawing.Point(302, 30)
+        Me.CboAlma2.Name = "CboAlma2"
+        Me.CboAlma2.Size = New System.Drawing.Size(121, 21)
+        Me.CboAlma2.TabIndex = 39
         '
         'Label19
         '
@@ -720,12 +907,15 @@ Partial Class Form1
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.Transparent
-        Me.Panel5.Controls.Add(Me.Label11)
-        Me.Panel5.Controls.Add(Me.Button5)
+        Me.Panel5.Controls.Add(Me.Btnnvo)
+        Me.Panel5.Controls.Add(Me.LblRespTemp)
+        Me.Panel5.Controls.Add(Me.BtnConvertirTemp)
         Me.Panel5.Controls.Add(Me.Label12)
         Me.Panel5.Controls.Add(Me.TextBox5)
         Me.Panel5.Location = New System.Drawing.Point(105, 90)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel5.Controls.Add(Me.TxtValTemp)
+        Me.Panel5.Location = New System.Drawing.Point(79, 73)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(483, 192)
         Me.Panel5.TabIndex = 36
@@ -751,6 +941,36 @@ Partial Class Form1
         Me.Button5.TabIndex = 25
         Me.Button5.Text = "Convertidor"
         Me.Button5.UseVisualStyleBackColor = True
+        'Btnnvo
+        '
+        Me.Btnnvo.BackColor = System.Drawing.Color.Lime
+        Me.Btnnvo.Location = New System.Drawing.Point(223, 64)
+        Me.Btnnvo.Name = "Btnnvo"
+        Me.Btnnvo.Size = New System.Drawing.Size(75, 23)
+        Me.Btnnvo.TabIndex = 28
+        Me.Btnnvo.Text = "Nuevo"
+        Me.Btnnvo.UseVisualStyleBackColor = False
+        '
+        'LblRespTemp
+        '
+        Me.LblRespTemp.AutoSize = True
+        Me.LblRespTemp.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LblRespTemp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.LblRespTemp.Location = New System.Drawing.Point(103, 141)
+        Me.LblRespTemp.Name = "LblRespTemp"
+        Me.LblRespTemp.Size = New System.Drawing.Size(57, 15)
+        Me.LblRespTemp.TabIndex = 26
+        Me.LblRespTemp.Text = "Resultado"
+        '
+        'BtnConvertirTemp
+        '
+        Me.BtnConvertirTemp.BackColor = System.Drawing.Color.Lime
+        Me.BtnConvertirTemp.Location = New System.Drawing.Point(69, 64)
+        Me.BtnConvertirTemp.Name = "BtnConvertirTemp"
+        Me.BtnConvertirTemp.Size = New System.Drawing.Size(75, 23)
+        Me.BtnConvertirTemp.TabIndex = 25
+        Me.BtnConvertirTemp.Text = "Convertir"
+        Me.BtnConvertirTemp.UseVisualStyleBackColor = False
         '
         'Label12
         '
@@ -763,7 +983,7 @@ Partial Class Form1
         Me.Label12.TabIndex = 27
         Me.Label12.Text = "Valor"
         '
-        'TextBox5
+        'TxtValTemp
         '
         Me.TextBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -772,8 +992,14 @@ Partial Class Form1
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(133, 22)
         Me.TextBox5.TabIndex = 24
+        Me.TxtValTemp.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TxtValTemp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtValTemp.Location = New System.Drawing.Point(128, 0)
+        Me.TxtValTemp.Name = "TxtValTemp"
+        Me.TxtValTemp.Size = New System.Drawing.Size(100, 20)
+        Me.TxtValTemp.TabIndex = 24
         '
-        'ComboBox9
+        'CboAlma1
         '
         Me.ComboBox9.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.ComboBox9.FormattingEnabled = True
@@ -783,17 +1009,28 @@ Partial Class Form1
         Me.ComboBox9.Name = "ComboBox9"
         Me.ComboBox9.Size = New System.Drawing.Size(160, 24)
         Me.ComboBox9.TabIndex = 19
+        Me.CboAlma1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.CboAlma1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CboAlma1.FormattingEnabled = True
+        Me.CboAlma1.Items.AddRange(New Object() {"Kilobyte", "Kilobit", "Kibibit", "Megabit", "Mebibit", "Gigabit", "Terabit", "Byte", "Gibibit", "Tebibit"})
+        Me.CboAlma1.Location = New System.Drawing.Point(107, 30)
+        Me.CboAlma1.Name = "CboAlma1"
+        Me.CboAlma1.Size = New System.Drawing.Size(121, 21)
+        Me.CboAlma1.TabIndex = 19
         '
         'TabPage6
         '
         Me.TabPage6.BackColor = System.Drawing.Color.LavenderBlush
-        Me.TabPage6.Controls.Add(Me.ComboBox10)
+        Me.TabPage6.Controls.Add(Me.BnSalis)
+        Me.TabPage6.Controls.Add(Me.CboTiempo2)
         Me.TabPage6.Controls.Add(Me.Label20)
         Me.TabPage6.Controls.Add(Me.Label16)
         Me.TabPage6.Controls.Add(Me.Panel6)
         Me.TabPage6.Controls.Add(Me.ComboBox11)
         Me.TabPage6.Location = New System.Drawing.Point(4, 25)
         Me.TabPage6.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPage6.Controls.Add(Me.CboTiempo1)
+        Me.TabPage6.Location = New System.Drawing.Point(4, 22)
         Me.TabPage6.Name = "TabPage6"
         Me.TabPage6.Size = New System.Drawing.Size(696, 376)
         Me.TabPage6.TabIndex = 5
@@ -809,6 +1046,28 @@ Partial Class Form1
         Me.ComboBox10.Name = "ComboBox10"
         Me.ComboBox10.Size = New System.Drawing.Size(160, 24)
         Me.ComboBox10.TabIndex = 39
+        'BnSalis
+        '
+        Me.BnSalis.BackColor = System.Drawing.Color.Fuchsia
+        Me.BnSalis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow
+        Me.BnSalis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
+        Me.BnSalis.Location = New System.Drawing.Point(194, 259)
+        Me.BnSalis.Name = "BnSalis"
+        Me.BnSalis.Size = New System.Drawing.Size(75, 23)
+        Me.BnSalis.TabIndex = 29
+        Me.BnSalis.Text = "Salir"
+        Me.BnSalis.UseVisualStyleBackColor = False
+        '
+        'CboTiempo2
+        '
+        Me.CboTiempo2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.CboTiempo2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CboTiempo2.FormattingEnabled = True
+        Me.CboTiempo2.Items.AddRange(New Object() {"Nanosegundos", "Microsegundo", "Milisegundo", "Segundo", "Minuto", "Hora", "Dia", "Semana ", "Mes", "Año"})
+        Me.CboTiempo2.Location = New System.Drawing.Point(298, 25)
+        Me.CboTiempo2.Name = "CboTiempo2"
+        Me.CboTiempo2.Size = New System.Drawing.Size(121, 21)
+        Me.CboTiempo2.TabIndex = 39
         '
         'Label20
         '
@@ -835,12 +1094,15 @@ Partial Class Form1
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.Transparent
-        Me.Panel6.Controls.Add(Me.Label4)
-        Me.Panel6.Controls.Add(Me.Button2)
+        Me.Panel6.Controls.Add(Me.BtnNewis)
+        Me.Panel6.Controls.Add(Me.LblTiemporesultante)
+        Me.Panel6.Controls.Add(Me.BtnConversortiempo)
         Me.Panel6.Controls.Add(Me.Label5)
         Me.Panel6.Controls.Add(Me.TextBox1)
         Me.Panel6.Location = New System.Drawing.Point(105, 90)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel6.Controls.Add(Me.TxtIntroductor)
+        Me.Panel6.Location = New System.Drawing.Point(79, 73)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(483, 192)
         Me.Panel6.TabIndex = 36
@@ -866,6 +1128,36 @@ Partial Class Form1
         Me.Button2.TabIndex = 25
         Me.Button2.Text = "Convertidor"
         Me.Button2.UseVisualStyleBackColor = True
+        'BtnNewis
+        '
+        Me.BtnNewis.BackColor = System.Drawing.Color.Fuchsia
+        Me.BtnNewis.Location = New System.Drawing.Point(219, 58)
+        Me.BtnNewis.Name = "BtnNewis"
+        Me.BtnNewis.Size = New System.Drawing.Size(75, 23)
+        Me.BtnNewis.TabIndex = 28
+        Me.BtnNewis.Text = "Nuevo"
+        Me.BtnNewis.UseVisualStyleBackColor = False
+        '
+        'LblTiemporesultante
+        '
+        Me.LblTiemporesultante.AutoSize = True
+        Me.LblTiemporesultante.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LblTiemporesultante.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.LblTiemporesultante.Location = New System.Drawing.Point(103, 141)
+        Me.LblTiemporesultante.Name = "LblTiemporesultante"
+        Me.LblTiemporesultante.Size = New System.Drawing.Size(57, 15)
+        Me.LblTiemporesultante.TabIndex = 26
+        Me.LblTiemporesultante.Text = "Resultado"
+        '
+        'BtnConversortiempo
+        '
+        Me.BtnConversortiempo.BackColor = System.Drawing.Color.Fuchsia
+        Me.BtnConversortiempo.Location = New System.Drawing.Point(51, 58)
+        Me.BtnConversortiempo.Name = "BtnConversortiempo"
+        Me.BtnConversortiempo.Size = New System.Drawing.Size(75, 23)
+        Me.BtnConversortiempo.TabIndex = 25
+        Me.BtnConversortiempo.Text = "Convertidor"
+        Me.BtnConversortiempo.UseVisualStyleBackColor = False
         '
         'Label5
         '
@@ -873,12 +1165,20 @@ Partial Class Form1
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Label5.Location = New System.Drawing.Point(88, 6)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(85, 2)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(41, 17)
         Me.Label5.TabIndex = 27
         Me.Label5.Text = "Valor"
         '
-        'TextBox1
+        'TxtIntroductor
+        '
+        Me.TxtIntroductor.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TxtIntroductor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtIntroductor.Location = New System.Drawing.Point(128, 0)
+        Me.TxtIntroductor.Name = "TxtIntroductor"
+        Me.TxtIntroductor.Size = New System.Drawing.Size(100, 20)
+        Me.TxtIntroductor.TabIndex = 24
         '
         Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -887,6 +1187,34 @@ Partial Class Form1
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(133, 22)
         Me.TextBox1.TabIndex = 24
+        'txtb7
+        '
+        Me.txtb7.Location = New System.Drawing.Point(190, 49)
+        Me.txtb7.Name = "txtb7"
+        Me.txtb7.Size = New System.Drawing.Size(75, 23)
+        Me.txtb7.TabIndex = 38
+        Me.txtb7.Text = "NUEVO"
+        Me.txtb7.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(191, 258)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(75, 23)
+        Me.Button8.TabIndex = 39
+        Me.Button8.Text = "SALIR"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'lblno
+        '
+        Me.lblno.AutoSize = True
+        Me.lblno.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblno.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblno.Location = New System.Drawing.Point(166, 141)
+        Me.lblno.Name = "lblno"
+        Me.lblno.Size = New System.Drawing.Size(15, 15)
+        Me.lblno.TabIndex = 29
+        Me.lblno.Text = "?"
         '
         'btnnue
         '
@@ -920,6 +1248,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(744, 428)
+        Me.ClientSize = New System.Drawing.Size(558, 348)
         Me.Controls.Add(Me.TabControl1)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form1"
@@ -963,9 +1292,20 @@ Partial Class Form1
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents Panel1 As Panel
     Friend WithEvents lblrespuesta As Label
+    Friend WithEvents CboTiempo1 As ComboBox
+    Friend WithEvents cboa As ComboBox
+    Friend WithEvents ComboBox7 As ComboBox
+    Friend WithEvents ComboBox5 As ComboBox
+    Friend WithEvents cboa2 As ComboBox
+    Friend WithEvents cbode2 As ComboBox
+    Friend WithEvents ComboBox6 As ComboBox
+    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents lblrespuestaDivisas As Label
     Friend WithEvents BtnConvertidormonedas As Button
     Friend WithEvents LblValor As Label
-    Friend WithEvents TxtValor As TextBox
+    Friend WithEvents TxtValorDivisas As TextBox
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents TabPage4 As TabPage
@@ -977,12 +1317,15 @@ Partial Class Form1
     Friend WithEvents Label6 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblrespuesta2 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents lbl_a As Label
     Friend WithEvents lbl_de As Label
+    Friend WithEvents txtvalor2 As TextBox
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label13 As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents lblr As Label
     Friend WithEvents btnconver As Button
@@ -996,16 +1339,16 @@ Partial Class Form1
     Friend WithEvents txtcodigo As TextBox
     Friend WithEvents Label15 As Label
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Button5 As Button
+    Friend WithEvents LblRespTemp As Label
+    Friend WithEvents BtnConvertirTemp As Button
     Friend WithEvents Label12 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents TxtValTemp As TextBox
     Friend WithEvents Label16 As Label
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents LblTiemporesultante As Label
+    Friend WithEvents BtnConversortiempo As Button
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TxtIntroductor As TextBox
     Friend WithEvents Label18 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
@@ -1020,4 +1363,17 @@ Partial Class Form1
     Friend WithEvents btn3 As Button
     Friend WithEvents btn4 As Button
     Friend WithEvents btnnue As Button
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents CboAlma2 As ComboBox
+    Friend WithEvents CboAlma1 As ComboBox
+    Friend WithEvents CboTiempo2 As ComboBox
+    Friend WithEvents Button6 As Button
+    Friend WithEvents btnnuevo As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents txtb7 As Button
+    Friend WithEvents lblno As Label
+    Friend WithEvents Btnnvo As Button
+    Friend WithEvents BtnSalir As Button
+    Friend WithEvents BnSalis As Button
+    Friend WithEvents BtnNewis As Button
 End Class
