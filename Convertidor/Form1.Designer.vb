@@ -439,6 +439,7 @@ Partial Class Form1
         Me.BtnConvertidormonedas.FlatAppearance.BorderSize = 0
         Me.BtnConvertidormonedas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow
         Me.BtnConvertidormonedas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
+        Me.BtnConvertidormonedas.Location = New System.Drawing.Point(57, 52)
         Me.BtnConvertidormonedas.Location = New System.Drawing.Point(88, 64)
         Me.BtnConvertidormonedas.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnConvertidormonedas.Name = "BtnConvertidormonedas"
