@@ -98,6 +98,8 @@ Partial Class Form1
         Me.BtnConversortiempo = New System.Windows.Forms.Button()
     
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.TxtIntroductor = New System.Windows.Forms.TextBox()
+        Me.lblno = New System.Windows.Forms.Label()
     
 
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -146,7 +148,8 @@ Partial Class Form1
         '
         'cboa2
         '
-
+        Me.cboa2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.cboa2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboa2.AutoCompleteCustomSource.AddRange(New String() {"Tonelada", "Decagramo", "Kilogramo", "Hectogramo", "Gramo", "Quilate", "Centigramo", "Miligramo", "Libra", "Quintal"})
         Me.cboa2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.cboa2.FormattingEnabled = True
@@ -155,7 +158,13 @@ Partial Class Form1
         Me.cboa2.Name = "cboa2"
         Me.cboa2.Size = New System.Drawing.Size(121, 21)
         Me.cboa2.TabIndex = 14
-
+        '
+        'cbode2
+        '
+        Me.cbode2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.cbode2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbode2.FormattingEnabled = True
+        Me.cbode2.Items.AddRange(New Object() {"Tonelada", "Decagramo", "Kilogramo", "Hectograma", "Gramo", "Quilate", "Centigramo", "Miligramo", "Libra", "Quintal"})
         Me.ComboBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox4.FormattingEnabled = True
@@ -178,7 +187,6 @@ Partial Class Form1
         Me.cbode2.Name = "cbode2"
         Me.cbode2.Size = New System.Drawing.Size(121, 21)
         Me.cbode2.TabIndex = 13
-
         Me.ComboBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox3.FormattingEnabled = True
@@ -188,7 +196,6 @@ Partial Class Form1
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(160, 24)
         Me.ComboBox3.TabIndex = 13
-
         '
         'cbxselect2
         '
@@ -482,6 +489,10 @@ Partial Class Form1
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TabPage2.Controls.Add(Me.lblno)
+        Me.TabPage2.Controls.Add(Me.Label6)
+        Me.TabPage2.Controls.Add(Me.Label3)
+        Me.TabPage2.Controls.Add(Me.Panel2)
         Me.TabPage2.Controls.Add(Me.Button8)
         Me.TabPage2.Controls.Add(Me.Label6)
         Me.TabPage2.Controls.Add(Me.Label3)
@@ -524,6 +535,9 @@ Partial Class Form1
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Transparent
+        Me.Panel2.Controls.Add(Me.lblrespuesta2)
+        Me.Panel2.Controls.Add(Me.Button1)
+        Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.lblno)
         Me.Panel2.Controls.Add(Me.lblrespuesta2)
         Me.Panel2.Controls.Add(Me.txtb7)
@@ -540,6 +554,18 @@ Partial Class Form1
         '
         'lblrespuesta2
         '
+        Me.lblrespuesta2.AutoSize = True
+        Me.lblrespuesta2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblrespuesta2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblrespuesta2.Location = New System.Drawing.Point(103, 141)
+        Me.lblrespuesta2.Name = "lblrespuesta2"
+        Me.lblrespuesta2.Size = New System.Drawing.Size(57, 15)
+        Me.lblrespuesta2.TabIndex = 26
+        Me.lblrespuesta2.Text = "Resultado"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(103, 60)
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
@@ -1211,6 +1237,12 @@ Partial Class Form1
         Me.lblno.AutoSize = True
         Me.lblno.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblno.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblno.Location = New System.Drawing.Point(269, 214)
+        Me.lblno.Name = "lblno"
+        Me.lblno.Size = New System.Drawing.Size(15, 15)
+        Me.lblno.TabIndex = 28
+        Me.lblno.Text = "?"
+        '
         Me.lblno.Location = New System.Drawing.Point(166, 141)
         Me.lblno.Name = "lblno"
         Me.lblno.Size = New System.Drawing.Size(15, 15)
@@ -1377,4 +1409,5 @@ Partial Class Form1
     Friend WithEvents BtnSalir As Button
     Friend WithEvents BnSalis As Button
     Friend WithEvents BtnNewis As Button
+    Friend WithEvents lblno As Label
 End Class

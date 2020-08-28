@@ -3175,4 +3175,557 @@
     Private Sub BtnNewis_Click(sender As Object, e As EventArgs) Handles BtnNewis.Click
         TxtIntroductor.Clear()
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+
+        '-------------------Empezamos con el conversore de masa----------------
+        '----------------------........TONELADAS...........---------------------
+        If cbode2.Text = "Tonelada" And cboa2.Text = "Tonelada" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text)
+            lblno.Text = "Toneladas"
+        End If
+
+
+        If cbode2.Text = "Tonelada" And cboa2.Text = "Decagramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 100000
+            lblno.Text = "DG"
+        End If
+
+        If cbode2.Text = "Tonelada" And cboa2.Text = "Kilogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 1000
+            lblno.Text = "KG"
+        End If
+
+        If cbode2.Text = "Tonelada" And cboa2.Text = "Hectogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 10000
+            lblno.Text = "HG"
+        End If
+
+        If cbode2.Text = "Tonelada" And cboa2.Text = "Gramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 1000000
+            lblno.Text = "G"
+        End If
+
+        If cbode2.Text = "Tonelada" And cboa2.Text = "Quilate" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 50000000
+            lblno.Text = "Q"
+        End If
+
+        If cbode2.Text = "Tonelada" And cboa2.Text = "Centigramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 100000000
+            lblno.Text = "CG"
+        End If
+
+        If cbode2.Text = "Tonelada" And cboa2.Text = "Miligramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 1000000000
+            lblno.Text = "MG"
+        End If
+
+        If cbode2.Text = "Tonelada" And cboa2.Text = "Libra" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 2204.62
+            lblno.Text = "LB"
+        End If
+
+        If cbode2.Text = "Tonelada" And cboa2.Text = "Quintal" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 10
+            lblno.Text = "Quintal"
+        End If
+
+
+
+
+        '----------------------........Decagramos...........---------------------
+        If cbode2.Text = "Decagramo" And cboa2.Text = "Tonelada" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 100000
+            lblno.Text = "Tonelada"
+        End If
+
+
+        If cbode2.Text = "Decagramo" And cboa2.Text = "Decagramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text)
+            lblno.Text = "DG"
+        End If
+
+        If cbode2.Text = "Decagramo" And cboa2.Text = "Kilogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 100
+            lblno.Text = "KG"
+        End If
+
+        If cbode2.Text = "Decagramo" And cboa2.Text = "Hectogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 0.1
+            lblno.Text = "HG"
+        End If
+
+        If cbode2.Text = "Decagramo" And cboa2.Text = "Gramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 10
+            lblno.Text = "G"
+        End If
+
+        If cbode2.Text = "Decagramo" And cboa2.Text = "Quilate" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 50
+            lblno.Text = "Q"
+        End If
+
+        If cbode2.Text = "Decagramo" And cboa2.Text = "Centigramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 1000
+            lblno.Text = "CG"
+        End If
+
+        If cbode2.Text = "Decagramo" And cboa2.Text = "Miligramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 10000
+            lblno.Text = "MG"
+        End If
+
+        If cbode2.Text = "Decagramo" And cboa2.Text = "Libra" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 45.359
+            lblno.Text = "LB"
+        End If
+
+        If cbode2.Text = "Decagramo" And cboa2.Text = "Quintal" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 10000
+            lblno.Text = "Quintal"
+        End If
+
+
+
+
+
+        '----------------------........Kilogramo...........---------------------
+        If cbode2.Text = "Kilogramo" And cboa2.Text = "Tonelada" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 1000
+            lblno.Text = "Tonelada"
+        End If
+
+
+        If cbode2.Text = "Kilogramo" And cboa2.Text = "Decagramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 100
+            lblno.Text = "DG"
+        End If
+
+        If cbode2.Text = "Kilogramo" And cboa2.Text = "Kilogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text)
+            lblno.Text = "KG"
+        End If
+
+        If cbode2.Text = "Kilogramo" And cboa2.Text = "Hectogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 10
+            lblno.Text = "HG"
+        End If
+
+        If cbode2.Text = "Kilogramo" And cboa2.Text = "Gramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 1000
+            lblno.Text = "G"
+        End If
+
+        If cbode2.Text = "Kilogramo" And cboa2.Text = "Quilate" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 5000
+            lblno.Text = "Q"
+        End If
+
+        If cbode2.Text = "Kilogramo" And cboa2.Text = "Centigramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 100000
+            lblno.Text = "CG"
+        End If
+
+        If cbode2.Text = "Kilogramo" And cboa2.Text = "Miligramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 1000000
+            lblno.Text = "MG"
+        End If
+
+        If cbode2.Text = "Kilogramo" And cboa2.Text = "Libra" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 2.205
+            lblno.Text = "LB"
+        End If
+
+        If cbode2.Text = "Kilogramo" And cboa2.Text = "Quintal" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 100
+            lblno.Text = "Quintal"
+        End If
+
+
+
+
+        '----------------------........Hectogramo...........---------------------
+        If cbode2.Text = "Hectogramo" And cboa2.Text = "Tonelada" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 10000
+            lblno.Text = "Tonelada"
+        End If
+
+
+        If cbode2.Text = "Hectogramo" And cboa2.Text = "Decagramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 10
+            lblno.Text = "DG"
+        End If
+
+        If cbode2.Text = "Hectogramo" And cboa2.Text = "Kilogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 10
+            lblno.Text = "KG"
+        End If
+
+        If cbode2.Text = "Hectogramo" And cboa2.Text = "Hectogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text)
+            lblno.Text = "HG"
+        End If
+
+        If cbode2.Text = "Hectogramo" And cboa2.Text = "Gramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 100
+            lblno.Text = "G"
+        End If
+
+        If cbode2.Text = "Hectogramo" And cboa2.Text = "Quilate" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 500
+            lblno.Text = "Q"
+        End If
+
+        If cbode2.Text = "Hectogramo" And cboa2.Text = "Centigramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 10000
+            lblno.Text = "CG"
+        End If
+
+        If cbode2.Text = "Hectogramo" And cboa2.Text = "Miligramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 100000
+            lblno.Text = "MG"
+        End If
+
+        If cbode2.Text = "Hectogramo" And cboa2.Text = "Libra" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 4.536
+            lblno.Text = "LB"
+        End If
+
+        If cbode2.Text = "Hectogramo" And cboa2.Text = "Quintal" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 1000
+            lblno.Text = "Quintal"
+        End If
+
+
+
+        '----------------------........Gramo...........---------------------
+        If cbode2.Text = "Gramo" And cboa2.Text = "Tonelada" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 1000000
+            lblno.Text = "Tonelada"
+        End If
+
+
+        If cbode2.Text = "Gramo" And cboa2.Text = "Decagramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 10
+            lblno.Text = "DG"
+        End If
+
+        If cbode2.Text = "Gramo" And cboa2.Text = "Kilogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 1000
+            lblno.Text = "KG"
+        End If
+
+        If cbode2.Text = "Gramo" And cboa2.Text = "Hectogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 100
+            lblno.Text = "HG"
+        End If
+
+        If cbode2.Text = "Gramo" And cboa2.Text = "Gramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text)
+            lblno.Text = "G"
+        End If
+
+        If cbode2.Text = "Gramo" And cboa2.Text = "Quilate" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 5
+            lblno.Text = "Q"
+        End If
+
+        If cbode2.Text = "Gramo" And cboa2.Text = "Centigramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 100
+            lblno.Text = "CG"
+        End If
+
+        If cbode2.Text = "Gramo" And cboa2.Text = "Miligramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 1000
+            lblno.Text = "MG"
+        End If
+
+        If cbode2.Text = "Gramo" And cboa2.Text = "Libra" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 454
+            lblno.Text = "LB"
+        End If
+
+        If cbode2.Text = "Gramo" And cboa2.Text = "Quintal" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 100000
+            lblno.Text = "Quintal"
+        End If
+
+
+        '----------------------........Quilate...........---------------------
+        If cbode2.Text = "Quilate" And cboa2.Text = "Tonelada" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 5000000.0
+            lblno.Text = "Tonelada"
+        End If
+
+
+        If cbode2.Text = "Quilate" And cboa2.Text = "Decagramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 50
+            lblno.Text = "DG"
+        End If
+
+        If cbode2.Text = "Quilate" And cboa2.Text = "Kilogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 5000
+            lblno.Text = "KG"
+        End If
+
+        If cbode2.Text = "Quilate" And cboa2.Text = "Hectogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 500
+            lblno.Text = "HG"
+        End If
+
+        If cbode2.Text = "Quilate" And cboa2.Text = "Gramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 5
+            lblno.Text = "G"
+        End If
+
+        If cbode2.Text = "Quilate" And cboa2.Text = "Quilate" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text)
+            lblno.Text = "Q"
+        End If
+
+        If cbode2.Text = "Quilate" And cboa2.Text = "Centigramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 20
+            lblno.Text = "CG"
+        End If
+
+        If cbode2.Text = "Quilate" And cboa2.Text = "Miligramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 200
+            lblno.Text = "MG"
+        End If
+
+        If cbode2.Text = "Quilate" And cboa2.Text = "Libra" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 2268
+            lblno.Text = "LB"
+        End If
+
+        If cbode2.Text = "Quilate" And cboa2.Text = "Quintal" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 500000
+            lblno.Text = "Quintal"
+        End If
+
+
+
+
+        '----------------------........Centigramo...........---------------------
+        If cbode2.Text = "Centigramo" And cboa2.Text = "Tonelada" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 100000000.0
+
+            lblno.Text = "Tonelada"
+        End If
+
+
+        If cbode2.Text = "Centigramo" And cboa2.Text = "Decagramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 1000
+            lblno.Text = "DG"
+        End If
+
+        If cbode2.Text = "Centigramo" And cboa2.Text = "Kilogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 100000
+            lblno.Text = "KG"
+        End If
+
+        If cbode2.Text = "Centigramo" And cboa2.Text = "Hectogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 10000
+            lblno.Text = "HG"
+        End If
+
+        If cbode2.Text = "Centigramo" And cboa2.Text = "Gramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 100
+            lblno.Text = "G"
+        End If
+
+        If cbode2.Text = "Centigramo" And cboa2.Text = "Quilate" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 20
+            lblno.Text = "Q"
+        End If
+
+        If cbode2.Text = "Centigramo" And cboa2.Text = "Centigramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text)
+            lblno.Text = "CG"
+        End If
+
+        If cbode2.Text = "Centigramo" And cboa2.Text = "Miligramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 10
+            lblno.Text = "MG"
+        End If
+
+        If cbode2.Text = "Centigramo" And cboa2.Text = "Libra" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 45359
+            lblno.Text = "LB"
+        End If
+
+        If cbode2.Text = "Centigramo" And cboa2.Text = "Quintal" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 10000000.0
+            lblno.Text = "Quintal"
+        End If
+
+
+        '----------------------........Miligramo...........---------------------
+        If cbode2.Text = "Miligramo" And cboa2.Text = "Tonelada" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 1000000000.0
+            lblno.Text = "Tonelada"
+        End If
+
+
+        If cbode2.Text = "Miligramo" And cboa2.Text = "Decagramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 10000
+            lblno.Text = "DG"
+        End If
+
+        If cbode2.Text = "Miligramo" And cboa2.Text = "Kilogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 100
+            lblno.Text = "KG"
+        End If
+
+        If cbode2.Text = "Miligramo" And cboa2.Text = "Hectogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 10
+            lblno.Text = "HG"
+        End If
+
+        If cbode2.Text = "Miligramo" And cboa2.Text = "Gramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 10
+            lblno.Text = "G"
+        End If
+
+        If cbode2.Text = "Miligramo" And cboa2.Text = "Quilate" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 50
+            lblno.Text = "Q"
+        End If
+
+        If cbode2.Text = "Miligramo" And cboa2.Text = "Centigramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 1000
+            lblno.Text = "CG"
+        End If
+
+        If cbode2.Text = "Miligramo" And cboa2.Text = "Miligramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text)
+            lblno.Text = "MG"
+        End If
+
+        If cbode2.Text = "Miligramo" And cboa2.Text = "Libra" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 45.359
+            lblno.Text = "LB"
+        End If
+
+        If cbode2.Text = "Miligramo" And cboa2.Text = "Quintal" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 10000
+            lblno.Text = "Quintal"
+        End If
+
+
+
+        '----------------------........Libra...........---------------------
+        If cbode2.Text = "Libra" And cboa2.Text = "Tonelada" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 2205
+            lblno.Text = "Tonelada"
+        End If
+
+
+        If cbode2.Text = "Libra" And cboa2.Text = "Decagramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 45.359
+            lblno.Text = "DG"
+        End If
+
+        If cbode2.Text = "Libra" And cboa2.Text = "Kilogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 2.205
+            lblno.Text = "KG"
+        End If
+
+        If cbode2.Text = "Libra" And cboa2.Text = "Hectogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 4.536
+            lblno.Text = "HG"
+        End If
+
+        If cbode2.Text = "Libra" And cboa2.Text = "Gramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 454
+            lblno.Text = "G"
+        End If
+
+        If cbode2.Text = "Libra" And cboa2.Text = "Quilate" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 2268
+            lblno.Text = "Q"
+        End If
+
+        If cbode2.Text = "Libra" And cboa2.Text = "Centigramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 45359
+            lblno.Text = "CG"
+        End If
+
+        If cbode2.Text = "Libra" And cboa2.Text = "Miligramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 453592
+            lblno.Text = "MG"
+        End If
+
+        If cbode2.Text = "Libra" And cboa2.Text = "Libra" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text)
+            lblno.Text = "LB"
+        End If
+
+        If cbode2.Text = "Libra" And cboa2.Text = "Quintal" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 220
+            lblno.Text = "Quintal"
+        End If
+
+
+
+
+        '----------------------........Quintal...........---------------------
+        If cbode2.Text = "Quintal" And cboa2.Text = "Tonelada" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 10
+            lblno.Text = "Tonelada"
+        End If
+
+
+        If cbode2.Text = "Quintal" And cboa2.Text = "Decagramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 10000
+            lblno.Text = "DG"
+        End If
+
+        If cbode2.Text = "Quintal" And cboa2.Text = "Kilogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) / 100
+            lblno.Text = "KG"
+        End If
+
+        If cbode2.Text = "Quintal" And cboa2.Text = "Hectogramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 1000
+            lblno.Text = "HG"
+        End If
+
+        If cbode2.Text = "Quintal" And cboa2.Text = "Gramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 100000
+            lblno.Text = "G"
+        End If
+
+        If cbode2.Text = "Quintal" And cboa2.Text = "Quilate" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 500000
+            lblno.Text = "Q"
+        End If
+
+        If cbode2.Text = "Quintal" And cboa2.Text = "Centigramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 10000000.0
+            lblno.Text = "CG"
+        End If
+
+        If cbode2.Text = "Quintal" And cboa2.Text = "Miligramo" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 100000000.0
+            lblno.Text = "MG"
+        End If
+
+        If cbode2.Text = "Quintal" And cboa2.Text = "Libra" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text) * 220
+            lblno.Text = "LB"
+        End If
+
+        If cbode2.Text = "Quintal" And cboa2.Text = "Quintal" Then
+            lblrespuesta2.Text = Val(txtvalor2.Text)
+            lblno.Text = "Quintal"
+        End If
+
+
+
+
+
+    End Sub
 End Class
