@@ -99,7 +99,7 @@ Partial Class Form1
         '
         Me.Button1.BackColor = System.Drawing.Color.Crimson
         Me.Button1.Image = Global.Proyecto_final_de_computo_1.My.Resources.Resources.PIA18847_hires
-        Me.Button1.Location = New System.Drawing.Point(323, 245)
+        Me.Button1.Location = New System.Drawing.Point(259, 241)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 0
