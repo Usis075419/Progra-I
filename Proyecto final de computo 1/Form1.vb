@@ -239,4 +239,26 @@
         End
 
     End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles txtunidad.TextChanged
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+
+
+        txtcantidad.Clear()
+        txtunidad.Clear()
+        txtcajas.Clear()
+
+
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+
+        MessageBox.Show("Tenga un lindo dias, Bendiciones :)")
+        End
+
+
+    End Sub
 End Class
