@@ -28,21 +28,21 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.LblValor = New System.Windows.Forms.Label()
-        Me.TxtA = New System.Windows.Forms.TextBox()
         Me.LblA = New System.Windows.Forms.Label()
         Me.LblDe = New System.Windows.Forms.Label()
-        Me.TxtDE = New System.Windows.Forms.TextBox()
         Me.BtnConversordearea = New System.Windows.Forms.Button()
-        Me.rdo7 = New System.Windows.Forms.RadioButton()
-        Me.rdo5 = New System.Windows.Forms.RadioButton()
-        Me.rdo6 = New System.Windows.Forms.RadioButton()
-        Me.rdo4 = New System.Windows.Forms.RadioButton()
-        Me.rdo2 = New System.Windows.Forms.RadioButton()
-        Me.rdo3 = New System.Windows.Forms.RadioButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.rdoconversordearea = New System.Windows.Forms.RadioButton()
         Me.rdoconversorpropio = New System.Windows.Forms.RadioButton()
+        Me.txtvalor = New System.Windows.Forms.TextBox()
+        Me.lblrespuesta = New System.Windows.Forms.Label()
+        Me.lbl2 = New System.Windows.Forms.Label()
+        Me.cbode = New System.Windows.Forms.ComboBox()
+        Me.cboa = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.TabPrincipal.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -108,18 +108,18 @@ Partial Class Form1
         '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.Button3)
+        Me.TabPage2.Controls.Add(Me.Button2)
+        Me.TabPage2.Controls.Add(Me.Label1)
+        Me.TabPage2.Controls.Add(Me.cboa)
+        Me.TabPage2.Controls.Add(Me.cbode)
+        Me.TabPage2.Controls.Add(Me.lbl2)
+        Me.TabPage2.Controls.Add(Me.lblrespuesta)
         Me.TabPage2.Controls.Add(Me.LblValor)
-        Me.TabPage2.Controls.Add(Me.TxtA)
+        Me.TabPage2.Controls.Add(Me.txtvalor)
         Me.TabPage2.Controls.Add(Me.LblA)
         Me.TabPage2.Controls.Add(Me.LblDe)
-        Me.TabPage2.Controls.Add(Me.TxtDE)
         Me.TabPage2.Controls.Add(Me.BtnConversordearea)
-        Me.TabPage2.Controls.Add(Me.rdo7)
-        Me.TabPage2.Controls.Add(Me.rdo5)
-        Me.TabPage2.Controls.Add(Me.rdo6)
-        Me.TabPage2.Controls.Add(Me.rdo4)
-        Me.TabPage2.Controls.Add(Me.rdo2)
-        Me.TabPage2.Controls.Add(Me.rdo3)
         Me.TabPage2.Controls.Add(Me.PictureBox1)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
@@ -133,24 +133,17 @@ Partial Class Form1
         '
         Me.LblValor.AutoSize = True
         Me.LblValor.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.LblValor.Location = New System.Drawing.Point(318, 49)
+        Me.LblValor.Location = New System.Drawing.Point(209, 153)
         Me.LblValor.Name = "LblValor"
         Me.LblValor.Size = New System.Drawing.Size(80, 13)
         Me.LblValor.TabIndex = 21
         Me.LblValor.Text = "Ingrese el Valor"
         '
-        'TxtA
-        '
-        Me.TxtA.Location = New System.Drawing.Point(289, 136)
-        Me.TxtA.Name = "TxtA"
-        Me.TxtA.Size = New System.Drawing.Size(133, 20)
-        Me.TxtA.TabIndex = 20
-        '
         'LblA
         '
         Me.LblA.AutoSize = True
         Me.LblA.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.LblA.Location = New System.Drawing.Point(269, 139)
+        Me.LblA.Location = New System.Drawing.Point(290, 63)
         Me.LblA.Name = "LblA"
         Me.LblA.Size = New System.Drawing.Size(14, 13)
         Me.LblA.TabIndex = 19
@@ -160,155 +153,22 @@ Partial Class Form1
         '
         Me.LblDe.AutoSize = True
         Me.LblDe.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.LblDe.Location = New System.Drawing.Point(262, 100)
+        Me.LblDe.Location = New System.Drawing.Point(23, 63)
         Me.LblDe.Name = "LblDe"
         Me.LblDe.Size = New System.Drawing.Size(21, 13)
         Me.LblDe.TabIndex = 18
         Me.LblDe.Text = "De"
         '
-        'TxtDE
-        '
-        Me.TxtDE.Location = New System.Drawing.Point(289, 97)
-        Me.TxtDE.Name = "TxtDE"
-        Me.TxtDE.Size = New System.Drawing.Size(133, 20)
-        Me.TxtDE.TabIndex = 17
-        '
         'BtnConversordearea
         '
         Me.BtnConversordearea.BackColor = System.Drawing.Color.Crimson
         Me.BtnConversordearea.Image = Global.Proyecto_final_de_computo_1.My.Resources.Resources.PIA18847_hires
-        Me.BtnConversordearea.Location = New System.Drawing.Point(347, 256)
+        Me.BtnConversordearea.Location = New System.Drawing.Point(293, 184)
         Me.BtnConversordearea.Name = "BtnConversordearea"
         Me.BtnConversordearea.Size = New System.Drawing.Size(75, 23)
         Me.BtnConversordearea.TabIndex = 16
         Me.BtnConversordearea.Text = "Convertir"
         Me.BtnConversordearea.UseVisualStyleBackColor = False
-        '
-        'rdo7
-        '
-        Me.rdo7.AllowDrop = True
-        Me.rdo7.Appearance = System.Windows.Forms.Appearance.Button
-        Me.rdo7.AutoSize = True
-        Me.rdo7.BackgroundImage = Global.Proyecto_final_de_computo_1.My.Resources.Resources.fondo_dibujos_animados_elementos_matematicas_23_21481678062
-        Me.rdo7.FlatAppearance.BorderColor = System.Drawing.Color.Yellow
-        Me.rdo7.FlatAppearance.BorderSize = 0
-        Me.rdo7.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.rdo7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime
-        Me.rdo7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
-        Me.rdo7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.rdo7.Location = New System.Drawing.Point(23, 194)
-        Me.rdo7.Name = "rdo7"
-        Me.rdo7.Size = New System.Drawing.Size(61, 23)
-        Me.rdo7.TabIndex = 15
-        Me.rdo7.TabStop = True
-        Me.rdo7.Text = "Hectarea"
-        Me.rdo7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.rdo7.UseVisualStyleBackColor = True
-        '
-        'rdo5
-        '
-        Me.rdo5.AllowDrop = True
-        Me.rdo5.Appearance = System.Windows.Forms.Appearance.Button
-        Me.rdo5.AutoSize = True
-        Me.rdo5.BackgroundImage = Global.Proyecto_final_de_computo_1.My.Resources.Resources.fondo_dibujos_animados_elementos_matematicas_23_21481678061
-        Me.rdo5.FlatAppearance.BorderColor = System.Drawing.Color.Yellow
-        Me.rdo5.FlatAppearance.BorderSize = 0
-        Me.rdo5.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.rdo5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime
-        Me.rdo5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
-        Me.rdo5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.rdo5.Location = New System.Drawing.Point(24, 136)
-        Me.rdo5.Name = "rdo5"
-        Me.rdo5.Size = New System.Drawing.Size(50, 23)
-        Me.rdo5.TabIndex = 14
-        Me.rdo5.TabStop = True
-        Me.rdo5.Text = "Tareas"
-        Me.rdo5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.rdo5.UseVisualStyleBackColor = True
-        '
-        'rdo6
-        '
-        Me.rdo6.AllowDrop = True
-        Me.rdo6.Appearance = System.Windows.Forms.Appearance.Button
-        Me.rdo6.AutoSize = True
-        Me.rdo6.BackgroundImage = Global.Proyecto_final_de_computo_1.My.Resources.Resources.fondo_dibujos_animados_elementos_matematicas_23_2148167806
-        Me.rdo6.FlatAppearance.BorderColor = System.Drawing.Color.Yellow
-        Me.rdo6.FlatAppearance.BorderSize = 0
-        Me.rdo6.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.rdo6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime
-        Me.rdo6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
-        Me.rdo6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.rdo6.Location = New System.Drawing.Point(24, 165)
-        Me.rdo6.Name = "rdo6"
-        Me.rdo6.Size = New System.Drawing.Size(61, 23)
-        Me.rdo6.TabIndex = 13
-        Me.rdo6.TabStop = True
-        Me.rdo6.Text = "Manzana"
-        Me.rdo6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.rdo6.UseVisualStyleBackColor = True
-        '
-        'rdo4
-        '
-        Me.rdo4.AllowDrop = True
-        Me.rdo4.Appearance = System.Windows.Forms.Appearance.Button
-        Me.rdo4.AutoSize = True
-        Me.rdo4.BackgroundImage = Global.Proyecto_final_de_computo_1.My.Resources.Resources.fondo_dibujos_animados_elementos_matematicas_23_21481678062
-        Me.rdo4.FlatAppearance.BorderColor = System.Drawing.Color.Yellow
-        Me.rdo4.FlatAppearance.BorderSize = 0
-        Me.rdo4.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.rdo4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime
-        Me.rdo4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
-        Me.rdo4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.rdo4.Location = New System.Drawing.Point(24, 107)
-        Me.rdo4.Name = "rdo4"
-        Me.rdo4.Size = New System.Drawing.Size(93, 23)
-        Me.rdo4.TabIndex = 12
-        Me.rdo4.TabStop = True
-        Me.rdo4.Text = "Metro Cuadrado"
-        Me.rdo4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.rdo4.UseVisualStyleBackColor = True
-        '
-        'rdo2
-        '
-        Me.rdo2.AllowDrop = True
-        Me.rdo2.Appearance = System.Windows.Forms.Appearance.Button
-        Me.rdo2.AutoSize = True
-        Me.rdo2.BackgroundImage = Global.Proyecto_final_de_computo_1.My.Resources.Resources.fondo_dibujos_animados_elementos_matematicas_23_2148167806
-        Me.rdo2.FlatAppearance.BorderColor = System.Drawing.Color.Yellow
-        Me.rdo2.FlatAppearance.BorderSize = 0
-        Me.rdo2.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.rdo2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime
-        Me.rdo2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
-        Me.rdo2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.rdo2.Location = New System.Drawing.Point(23, 49)
-        Me.rdo2.Name = "rdo2"
-        Me.rdo2.Size = New System.Drawing.Size(88, 23)
-        Me.rdo2.TabIndex = 11
-        Me.rdo2.TabStop = True
-        Me.rdo2.Text = "Vara Cuadrada"
-        Me.rdo2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.rdo2.UseVisualStyleBackColor = True
-        '
-        'rdo3
-        '
-        Me.rdo3.AllowDrop = True
-        Me.rdo3.Appearance = System.Windows.Forms.Appearance.Button
-        Me.rdo3.AutoSize = True
-        Me.rdo3.BackgroundImage = Global.Proyecto_final_de_computo_1.My.Resources.Resources.fondo_dibujos_animados_elementos_matematicas_23_2148167806
-        Me.rdo3.FlatAppearance.BorderColor = System.Drawing.Color.Yellow
-        Me.rdo3.FlatAppearance.BorderSize = 0
-        Me.rdo3.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.rdo3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime
-        Me.rdo3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
-        Me.rdo3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.rdo3.Location = New System.Drawing.Point(23, 78)
-        Me.rdo3.Name = "rdo3"
-        Me.rdo3.Size = New System.Drawing.Size(94, 23)
-        Me.rdo3.TabIndex = 10
-        Me.rdo3.TabStop = True
-        Me.rdo3.Text = "Yarda Cuadrada"
-        Me.rdo3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.rdo3.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -328,7 +188,7 @@ Partial Class Form1
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(507, 51)
+        Me.Panel1.Size = New System.Drawing.Size(507, 54)
         Me.Panel1.TabIndex = 1
         '
         'rdoconversordearea
@@ -369,6 +229,83 @@ Partial Class Form1
         Me.rdoconversorpropio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.rdoconversorpropio.UseVisualStyleBackColor = True
         '
+        'txtvalor
+        '
+        Me.txtvalor.Location = New System.Drawing.Point(185, 119)
+        Me.txtvalor.Name = "txtvalor"
+        Me.txtvalor.Size = New System.Drawing.Size(133, 20)
+        Me.txtvalor.TabIndex = 20
+        '
+        'lblrespuesta
+        '
+        Me.lblrespuesta.AutoSize = True
+        Me.lblrespuesta.Location = New System.Drawing.Point(233, 225)
+        Me.lblrespuesta.Name = "lblrespuesta"
+        Me.lblrespuesta.Size = New System.Drawing.Size(13, 13)
+        Me.lblrespuesta.TabIndex = 22
+        Me.lblrespuesta.Text = "?"
+        '
+        'lbl2
+        '
+        Me.lbl2.AutoSize = True
+        Me.lbl2.Location = New System.Drawing.Point(193, 259)
+        Me.lbl2.Name = "lbl2"
+        Me.lbl2.Size = New System.Drawing.Size(96, 13)
+        Me.lbl2.TabIndex = 23
+        Me.lbl2.Text = "Unidad de medida."
+        '
+        'cbode
+        '
+        Me.cbode.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar
+        Me.cbode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbode.FormattingEnabled = True
+        Me.cbode.Items.AddRange(New Object() {"Vara Cuadrada", "Yarda cuadrada", "Metro cuadrado", "Tarea", "Manzana", "Hectarea"})
+        Me.cbode.Location = New System.Drawing.Point(66, 60)
+        Me.cbode.Name = "cbode"
+        Me.cbode.Size = New System.Drawing.Size(152, 21)
+        Me.cbode.TabIndex = 24
+        '
+        'cboa
+        '
+        Me.cboa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboa.FormattingEnabled = True
+        Me.cboa.Items.AddRange(New Object() {"Vara Cuadrada", "Yarda cuadrada", "Metro cuadrado", "Tarea", "Manzana", "Hectarea"})
+        Me.cboa.Location = New System.Drawing.Point(310, 60)
+        Me.cboa.Name = "cboa"
+        Me.cboa.Size = New System.Drawing.Size(150, 21)
+        Me.cboa.TabIndex = 25
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(109, 225)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(64, 13)
+        Me.Label1.TabIndex = 26
+        Me.Label1.Text = "Respuesta :"
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.Crimson
+        Me.Button2.Image = Global.Proyecto_final_de_computo_1.My.Resources.Resources.PIA18847_hires
+        Me.Button2.Location = New System.Drawing.Point(127, 184)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 27
+        Me.Button2.Text = "Limpiar"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.Crimson
+        Me.Button3.Image = Global.Proyecto_final_de_computo_1.My.Resources.Resources.PIA18847_hires
+        Me.Button3.Location = New System.Drawing.Point(8, 288)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 28
+        Me.Button3.Text = "Salir"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -399,16 +336,16 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents rdo1 As RadioButton
     Friend WithEvents LblValor As Label
-    Friend WithEvents TxtA As TextBox
     Friend WithEvents LblA As Label
     Friend WithEvents LblDe As Label
-    Friend WithEvents TxtDE As TextBox
     Friend WithEvents BtnConversordearea As Button
-    Friend WithEvents rdo7 As RadioButton
-    Friend WithEvents rdo5 As RadioButton
-    Friend WithEvents rdo6 As RadioButton
-    Friend WithEvents rdo4 As RadioButton
-    Friend WithEvents rdo2 As RadioButton
-    Friend WithEvents rdo3 As RadioButton
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents txtvalor As TextBox
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents cboa As ComboBox
+    Friend WithEvents cbode As ComboBox
+    Friend WithEvents lbl2 As Label
+    Friend WithEvents lblrespuesta As Label
 End Class
