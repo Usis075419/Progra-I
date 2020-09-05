@@ -23,7 +23,21 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.TabPrincipal = New System.Windows.Forms.TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtcajas = New System.Windows.Forms.TextBox()
+        Me.txtunidad = New System.Windows.Forms.TextBox()
+        Me.txtcantidad = New System.Windows.Forms.TextBox()
+        Me.rdo1 = New System.Windows.Forms.RadioButton()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cboa = New System.Windows.Forms.ComboBox()
         Me.cbode = New System.Windows.Forms.ComboBox()
@@ -33,30 +47,16 @@ Partial Class Form1
         Me.txtvalor = New System.Windows.Forms.TextBox()
         Me.LblA = New System.Windows.Forms.Label()
         Me.LblDe = New System.Windows.Forms.Label()
+        Me.BtnConversordearea = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.rdoconversordearea = New System.Windows.Forms.RadioButton()
         Me.rdoconversorpropio = New System.Windows.Forms.RadioButton()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtcajas = New System.Windows.Forms.TextBox()
-        Me.txtunidad = New System.Windows.Forms.TextBox()
-        Me.txtcantidad = New System.Windows.Forms.TextBox()
-        Me.rdo1 = New System.Windows.Forms.RadioButton()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.BtnConversordearea = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.TabPrincipal.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabPrincipal
@@ -65,181 +65,11 @@ Partial Class Form1
         Me.TabPrincipal.Controls.Add(Me.TabPage2)
         Me.TabPrincipal.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabPrincipal.Location = New System.Drawing.Point(0, 0)
-        Me.TabPrincipal.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.TabPrincipal.Margin = New System.Windows.Forms.Padding(6)
         Me.TabPrincipal.Name = "TabPrincipal"
         Me.TabPrincipal.SelectedIndex = 0
         Me.TabPrincipal.Size = New System.Drawing.Size(1014, 677)
         Me.TabPrincipal.TabIndex = 0
-        '
-        'TabPage2
-        '
-        Me.TabPage2.Controls.Add(Me.Button3)
-        Me.TabPage2.Controls.Add(Me.Button2)
-        Me.TabPage2.Controls.Add(Me.Label1)
-        Me.TabPage2.Controls.Add(Me.cboa)
-        Me.TabPage2.Controls.Add(Me.cbode)
-        Me.TabPage2.Controls.Add(Me.lbl2)
-        Me.TabPage2.Controls.Add(Me.lblrespuesta)
-        Me.TabPage2.Controls.Add(Me.LblValor)
-        Me.TabPage2.Controls.Add(Me.txtvalor)
-        Me.TabPage2.Controls.Add(Me.LblA)
-        Me.TabPage2.Controls.Add(Me.LblDe)
-        Me.TabPage2.Controls.Add(Me.BtnConversordearea)
-        Me.TabPage2.Controls.Add(Me.PictureBox1)
-        Me.TabPage2.Location = New System.Drawing.Point(8, 39)
-        Me.TabPage2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.TabPage2.Size = New System.Drawing.Size(998, 649)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "TabPage2"
-        Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(218, 433)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(127, 25)
-        Me.Label1.TabIndex = 26
-        Me.Label1.Text = "Respuesta :"
-        '
-        'cboa
-        '
-        Me.cboa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboa.FormattingEnabled = True
-        Me.cboa.Items.AddRange(New Object() {"Vara Cuadrada", "Yarda cuadrada", "Metro cuadrado", "Tarea", "Manzana", "Hectarea"})
-        Me.cboa.Location = New System.Drawing.Point(620, 115)
-        Me.cboa.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.cboa.Name = "cboa"
-        Me.cboa.Size = New System.Drawing.Size(296, 33)
-        Me.cboa.TabIndex = 25
-        '
-        'cbode
-        '
-        Me.cbode.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar
-        Me.cbode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbode.FormattingEnabled = True
-        Me.cbode.Items.AddRange(New Object() {"Vara Cuadrada", "Yarda cuadrada", "Metro cuadrado", "Tarea", "Manzana", "Hectarea"})
-        Me.cbode.Location = New System.Drawing.Point(132, 115)
-        Me.cbode.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.cbode.Name = "cbode"
-        Me.cbode.Size = New System.Drawing.Size(300, 33)
-        Me.cbode.TabIndex = 24
-        '
-        'lbl2
-        '
-        Me.lbl2.AutoSize = True
-        Me.lbl2.Location = New System.Drawing.Point(386, 498)
-        Me.lbl2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
-        Me.lbl2.Name = "lbl2"
-        Me.lbl2.Size = New System.Drawing.Size(192, 25)
-        Me.lbl2.TabIndex = 23
-        Me.lbl2.Text = "Unidad de medida."
-        '
-        'lblrespuesta
-        '
-        Me.lblrespuesta.AutoSize = True
-        Me.lblrespuesta.Location = New System.Drawing.Point(466, 433)
-        Me.lblrespuesta.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
-        Me.lblrespuesta.Name = "lblrespuesta"
-        Me.lblrespuesta.Size = New System.Drawing.Size(24, 25)
-        Me.lblrespuesta.TabIndex = 22
-        Me.lblrespuesta.Text = "?"
-        '
-        'LblValor
-        '
-        Me.LblValor.AutoSize = True
-        Me.LblValor.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.LblValor.Location = New System.Drawing.Point(418, 294)
-        Me.LblValor.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
-        Me.LblValor.Name = "LblValor"
-        Me.LblValor.Size = New System.Drawing.Size(162, 25)
-        Me.LblValor.TabIndex = 21
-        Me.LblValor.Text = "Ingrese el Valor"
-        '
-        'txtvalor
-        '
-        Me.txtvalor.Location = New System.Drawing.Point(370, 229)
-        Me.txtvalor.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.txtvalor.Name = "txtvalor"
-        Me.txtvalor.Size = New System.Drawing.Size(262, 31)
-        Me.txtvalor.TabIndex = 20
-        '
-        'LblA
-        '
-        Me.LblA.AutoSize = True
-        Me.LblA.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.LblA.Location = New System.Drawing.Point(580, 121)
-        Me.LblA.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
-        Me.LblA.Name = "LblA"
-        Me.LblA.Size = New System.Drawing.Size(26, 25)
-        Me.LblA.TabIndex = 19
-        Me.LblA.Text = "A"
-        '
-        'LblDe
-        '
-        Me.LblDe.AutoSize = True
-        Me.LblDe.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.LblDe.Location = New System.Drawing.Point(46, 121)
-        Me.LblDe.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
-        Me.LblDe.Name = "LblDe"
-        Me.LblDe.Size = New System.Drawing.Size(39, 25)
-        Me.LblDe.TabIndex = 18
-        Me.LblDe.Text = "De"
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.SteelBlue
-        Me.Panel1.Controls.Add(Me.rdoconversordearea)
-        Me.Panel1.Controls.Add(Me.rdoconversorpropio)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1014, 115)
-        Me.Panel1.TabIndex = 1
-        '
-        'rdoconversordearea
-        '
-        Me.rdoconversordearea.Appearance = System.Windows.Forms.Appearance.Button
-        Me.rdoconversordearea.AutoSize = True
-        Me.rdoconversordearea.BackgroundImage = Global.Proyecto_final_de_computo_1.My.Resources.Resources.fondo_dibujos_animados_elementos_matematicas_23_2148167806
-        Me.rdoconversordearea.FlatAppearance.BorderColor = System.Drawing.Color.Yellow
-        Me.rdoconversordearea.FlatAppearance.BorderSize = 0
-        Me.rdoconversordearea.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime
-        Me.rdoconversordearea.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
-        Me.rdoconversordearea.Location = New System.Drawing.Point(594, 23)
-        Me.rdoconversordearea.Margin = New System.Windows.Forms.Padding(6)
-        Me.rdoconversordearea.Name = "rdoconversordearea"
-        Me.rdoconversordearea.Size = New System.Drawing.Size(202, 35)
-        Me.rdoconversordearea.TabIndex = 1
-        Me.rdoconversordearea.Text = "Conversor de Area"
-        Me.rdoconversordearea.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.rdoconversordearea.UseVisualStyleBackColor = True
-        '
-        'rdoconversorpropio
-        '
-        Me.rdoconversorpropio.AllowDrop = True
-        Me.rdoconversorpropio.Appearance = System.Windows.Forms.Appearance.Button
-        Me.rdoconversorpropio.AutoSize = True
-        Me.rdoconversorpropio.BackgroundImage = Global.Proyecto_final_de_computo_1.My.Resources.Resources.fondo_dibujos_animados_elementos_matematicas_23_2148167806
-        Me.rdoconversorpropio.Checked = True
-        Me.rdoconversorpropio.FlatAppearance.BorderColor = System.Drawing.Color.Yellow
-        Me.rdoconversorpropio.FlatAppearance.BorderSize = 0
-        Me.rdoconversorpropio.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.rdoconversorpropio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime
-        Me.rdoconversorpropio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
-        Me.rdoconversorpropio.Location = New System.Drawing.Point(186, 23)
-        Me.rdoconversorpropio.Margin = New System.Windows.Forms.Padding(6)
-        Me.rdoconversorpropio.Name = "rdoconversorpropio"
-        Me.rdoconversorpropio.Size = New System.Drawing.Size(189, 35)
-        Me.rdoconversorpropio.TabIndex = 0
-        Me.rdoconversorpropio.TabStop = True
-        Me.rdoconversorpropio.Text = "Conversor Propio"
-        Me.rdoconversorpropio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.rdoconversorpropio.UseVisualStyleBackColor = True
         '
         'TabPage1
         '
@@ -263,6 +93,39 @@ Partial Class Form1
         Me.TabPage1.Size = New System.Drawing.Size(998, 630)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "TabPage1"
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.Crimson
+        Me.Button5.Image = Global.Proyecto_final_de_computo_1.My.Resources.Resources.PIA18847_hires
+        Me.Button5.Location = New System.Drawing.Point(124, 544)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(6)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(150, 44)
+        Me.Button5.TabIndex = 10
+        Me.Button5.Text = "Salir"
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.Crimson
+        Me.Button4.Image = Global.Proyecto_final_de_computo_1.My.Resources.Resources.PIA18847_hires
+        Me.Button4.Location = New System.Drawing.Point(638, 544)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(6)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(150, 44)
+        Me.Button4.TabIndex = 9
+        Me.Button4.Text = "Limpiar"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(352, 109)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(204, 25)
+        Me.Label5.TabIndex = 8
+        Me.Label5.Text = "Conversor de cajas."
         '
         'Label4
         '
@@ -347,6 +210,30 @@ Partial Class Form1
         Me.Button1.Text = "Convertir"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'TabPage2
+        '
+        Me.TabPage2.Controls.Add(Me.Button3)
+        Me.TabPage2.Controls.Add(Me.Button2)
+        Me.TabPage2.Controls.Add(Me.Label1)
+        Me.TabPage2.Controls.Add(Me.cboa)
+        Me.TabPage2.Controls.Add(Me.cbode)
+        Me.TabPage2.Controls.Add(Me.lbl2)
+        Me.TabPage2.Controls.Add(Me.lblrespuesta)
+        Me.TabPage2.Controls.Add(Me.LblValor)
+        Me.TabPage2.Controls.Add(Me.txtvalor)
+        Me.TabPage2.Controls.Add(Me.LblA)
+        Me.TabPage2.Controls.Add(Me.LblDe)
+        Me.TabPage2.Controls.Add(Me.BtnConversordearea)
+        Me.TabPage2.Controls.Add(Me.PictureBox1)
+        Me.TabPage2.Location = New System.Drawing.Point(8, 39)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(6)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(6)
+        Me.TabPage2.Size = New System.Drawing.Size(998, 630)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "TabPage2"
+        Me.TabPage2.UseVisualStyleBackColor = True
+        '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.Crimson
@@ -371,6 +258,100 @@ Partial Class Form1
         Me.Button2.Text = "Limpiar"
         Me.Button2.UseVisualStyleBackColor = False
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(218, 433)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(127, 25)
+        Me.Label1.TabIndex = 26
+        Me.Label1.Text = "Respuesta :"
+        '
+        'cboa
+        '
+        Me.cboa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboa.FormattingEnabled = True
+        Me.cboa.Items.AddRange(New Object() {"Pie cuadrado", "Vara Cuadrada", "Yarda cuadrada", "Metro cuadrado", "Tarea", "Manzana", "Hectarea"})
+        Me.cboa.Location = New System.Drawing.Point(620, 115)
+        Me.cboa.Margin = New System.Windows.Forms.Padding(6)
+        Me.cboa.Name = "cboa"
+        Me.cboa.Size = New System.Drawing.Size(296, 33)
+        Me.cboa.TabIndex = 25
+        '
+        'cbode
+        '
+        Me.cbode.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar
+        Me.cbode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbode.FormattingEnabled = True
+        Me.cbode.Items.AddRange(New Object() {"Pie cuadrado", "Vara Cuadrada", "Yarda cuadrada", "Metro cuadrado", "Tarea", "Manzana", "Hectarea"})
+        Me.cbode.Location = New System.Drawing.Point(132, 115)
+        Me.cbode.Margin = New System.Windows.Forms.Padding(6)
+        Me.cbode.Name = "cbode"
+        Me.cbode.Size = New System.Drawing.Size(300, 33)
+        Me.cbode.TabIndex = 24
+        '
+        'lbl2
+        '
+        Me.lbl2.AutoSize = True
+        Me.lbl2.Location = New System.Drawing.Point(386, 498)
+        Me.lbl2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.lbl2.Name = "lbl2"
+        Me.lbl2.Size = New System.Drawing.Size(192, 25)
+        Me.lbl2.TabIndex = 23
+        Me.lbl2.Text = "Unidad de medida."
+        '
+        'lblrespuesta
+        '
+        Me.lblrespuesta.AutoSize = True
+        Me.lblrespuesta.Location = New System.Drawing.Point(466, 433)
+        Me.lblrespuesta.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.lblrespuesta.Name = "lblrespuesta"
+        Me.lblrespuesta.Size = New System.Drawing.Size(24, 25)
+        Me.lblrespuesta.TabIndex = 22
+        Me.lblrespuesta.Text = "?"
+        '
+        'LblValor
+        '
+        Me.LblValor.AutoSize = True
+        Me.LblValor.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LblValor.Location = New System.Drawing.Point(418, 294)
+        Me.LblValor.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.LblValor.Name = "LblValor"
+        Me.LblValor.Size = New System.Drawing.Size(162, 25)
+        Me.LblValor.TabIndex = 21
+        Me.LblValor.Text = "Ingrese el Valor"
+        '
+        'txtvalor
+        '
+        Me.txtvalor.Location = New System.Drawing.Point(370, 229)
+        Me.txtvalor.Margin = New System.Windows.Forms.Padding(6)
+        Me.txtvalor.Name = "txtvalor"
+        Me.txtvalor.Size = New System.Drawing.Size(262, 31)
+        Me.txtvalor.TabIndex = 20
+        '
+        'LblA
+        '
+        Me.LblA.AutoSize = True
+        Me.LblA.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LblA.Location = New System.Drawing.Point(580, 121)
+        Me.LblA.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.LblA.Name = "LblA"
+        Me.LblA.Size = New System.Drawing.Size(26, 25)
+        Me.LblA.TabIndex = 19
+        Me.LblA.Text = "A"
+        '
+        'LblDe
+        '
+        Me.LblDe.AutoSize = True
+        Me.LblDe.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LblDe.Location = New System.Drawing.Point(46, 121)
+        Me.LblDe.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.LblDe.Name = "LblDe"
+        Me.LblDe.Size = New System.Drawing.Size(39, 25)
+        Me.LblDe.TabIndex = 18
+        Me.LblDe.Text = "De"
+        '
         'BtnConversordearea
         '
         Me.BtnConversordearea.BackColor = System.Drawing.Color.Crimson
@@ -394,38 +375,57 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 9
         Me.PictureBox1.TabStop = False
         '
-        'Label5
+        'Panel1
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(352, 109)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(204, 25)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "Conversor de cajas."
+        Me.Panel1.BackColor = System.Drawing.Color.SteelBlue
+        Me.Panel1.Controls.Add(Me.rdoconversordearea)
+        Me.Panel1.Controls.Add(Me.rdoconversorpropio)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(6)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1014, 102)
+        Me.Panel1.TabIndex = 1
         '
-        'Button4
+        'rdoconversordearea
         '
-        Me.Button4.BackColor = System.Drawing.Color.Crimson
-        Me.Button4.Image = Global.Proyecto_final_de_computo_1.My.Resources.Resources.PIA18847_hires
-        Me.Button4.Location = New System.Drawing.Point(638, 544)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(6)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(150, 44)
-        Me.Button4.TabIndex = 9
-        Me.Button4.Text = "Limpiar"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.rdoconversordearea.Appearance = System.Windows.Forms.Appearance.Button
+        Me.rdoconversordearea.AutoSize = True
+        Me.rdoconversordearea.BackgroundImage = Global.Proyecto_final_de_computo_1.My.Resources.Resources.fondo_dibujos_animados_elementos_matematicas_23_2148167806
+        Me.rdoconversordearea.FlatAppearance.BorderColor = System.Drawing.Color.Yellow
+        Me.rdoconversordearea.FlatAppearance.BorderSize = 0
+        Me.rdoconversordearea.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime
+        Me.rdoconversordearea.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
+        Me.rdoconversordearea.Location = New System.Drawing.Point(594, 23)
+        Me.rdoconversordearea.Margin = New System.Windows.Forms.Padding(6)
+        Me.rdoconversordearea.Name = "rdoconversordearea"
+        Me.rdoconversordearea.Size = New System.Drawing.Size(202, 35)
+        Me.rdoconversordearea.TabIndex = 1
+        Me.rdoconversordearea.Text = "Conversor de Area"
+        Me.rdoconversordearea.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.rdoconversordearea.UseVisualStyleBackColor = True
         '
-        'Button5
+        'rdoconversorpropio
         '
-        Me.Button5.BackColor = System.Drawing.Color.Crimson
-        Me.Button5.Image = Global.Proyecto_final_de_computo_1.My.Resources.Resources.PIA18847_hires
-        Me.Button5.Location = New System.Drawing.Point(124, 544)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(6)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(150, 44)
-        Me.Button5.TabIndex = 10
-        Me.Button5.Text = "Salir"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.rdoconversorpropio.AllowDrop = True
+        Me.rdoconversorpropio.Appearance = System.Windows.Forms.Appearance.Button
+        Me.rdoconversorpropio.AutoSize = True
+        Me.rdoconversorpropio.BackgroundImage = Global.Proyecto_final_de_computo_1.My.Resources.Resources.fondo_dibujos_animados_elementos_matematicas_23_2148167806
+        Me.rdoconversorpropio.Checked = True
+        Me.rdoconversorpropio.FlatAppearance.BorderColor = System.Drawing.Color.Yellow
+        Me.rdoconversorpropio.FlatAppearance.BorderSize = 0
+        Me.rdoconversorpropio.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.rdoconversorpropio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime
+        Me.rdoconversorpropio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
+        Me.rdoconversorpropio.Location = New System.Drawing.Point(186, 23)
+        Me.rdoconversorpropio.Margin = New System.Windows.Forms.Padding(6)
+        Me.rdoconversorpropio.Name = "rdoconversorpropio"
+        Me.rdoconversorpropio.Size = New System.Drawing.Size(189, 35)
+        Me.rdoconversorpropio.TabIndex = 0
+        Me.rdoconversorpropio.TabStop = True
+        Me.rdoconversorpropio.Text = "Conversor Propio"
+        Me.rdoconversorpropio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.rdoconversorpropio.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -434,17 +434,17 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(1014, 677)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.TabPrincipal)
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.TabPrincipal.ResumeLayout(False)
-        Me.TabPage2.ResumeLayout(False)
-        Me.TabPage2.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
+        Me.TabPage2.ResumeLayout(False)
+        Me.TabPage2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

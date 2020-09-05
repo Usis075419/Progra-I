@@ -27,7 +27,49 @@
 
 
         '------------------------------------Superficie-------------------------------------------------------
+        '------------------------------------Pie cuadrado-------------------------------------------------------
+        If cbode.Text = ("Pie cuadrado") And cboa.Text = ("Pie cuadrado") Then
+            lblrespuesta.Text = Val(txtvalor.Text)
+            lbl2.Text = ("Pie cuadrado")
+        End If
+
+        If cbode.Text = ("Pie cuadrado") And cboa.Text = ("Vara Cuadrada") Then
+            lblrespuesta.Text = Val(txtvalor.Text) * 0.13223087609
+            lbl2.Text = ("Varas cuadradas")
+        End If
+
+        If cbode.Text = ("Pie cuadrado") And cboa.Text = ("Yarda cuadrada") Then
+            lblrespuesta.Text = Val(txtvalor.Text) * 0.11111111111
+            lbl2.Text = ("Yardas cuadradas")
+        End If
+
+        If cbode.Text = ("Pie cuadrado") And cboa.Text = ("Metro cuadrado") Then
+            lblrespuesta.Text = Val(txtvalor.Text) * 0.09290304
+            lbl2.Text = ("Metros Cuadrados")
+        End If
+
+        If cbode.Text = ("Pie cuadrado") And cboa.Text = ("Tarea") Then
+            lblrespuesta.Text = Val(txtvalor.Text) * 0.00014774656489
+            lbl2.Text = ("Tareas")
+        End If
+
+        If cbode.Text = ("Pie cuadrado") And cboa.Text = ("Manzana") Then
+            lblrespuesta.Text = Val(txtvalor.Text) * 0.000013188960818
+            lbl2.Text = ("Manzanas")
+        End If
+
+        If cbode.Text = ("Pie cuadrado") And cboa.Text = ("Hectarea") Then
+            lblrespuesta.Text = Val(txtvalor.Text) * 0.000009290304
+            lbl2.Text = ("Hectareas")
+        End If
+
+
         '---------------------------------Yardas Cuadradas-----------------------------------------------------
+        If cbode.Text = ("Vara Cuadrada") And cboa.Text = ("Pie cuadrado") Then
+            lblrespuesta.Text = Val(txtvalor.Text) / 0.13223087609
+            lbl2.Text = ("Pie cuadrado")
+        End If
+
         If cbode.Text = ("Vara Cuadrada") And cboa.Text = ("Vara Cuadrada") Then
             lblrespuesta.Text = Val(txtvalor.Text)
             lbl2.Text = ("Varas cuadradas")
@@ -59,6 +101,11 @@
         End If
 
         '--------------------------------Yardas Cuadradas----------------------------------------------------------
+        If cbode.Text = ("Yarda cuadrada") And cboa.Text = ("Pie cuadrado") Then
+            lblrespuesta.Text = Val(txtvalor.Text) / 0.11111111111
+            lbl2.Text = ("Pie cuadrado")
+        End If
+
         If cbode.Text = ("Yarda cuadrada") And cboa.Text = ("Vara Cuadrada") Then
             lblrespuesta.Text = Val(txtvalor.Text)
             lbl2.Text = ("Varas cuadradas") * 14.280934618
@@ -90,6 +137,11 @@
         End If
 
         '--------------------------------Metros Cuadrados---------------------------------------------------------
+        If cbode.Text = ("Metro cuadrado") And cboa.Text = ("Pie cuadrado") Then
+            lblrespuesta.Text = Val(txtvalor.Text) / 0.09290304
+            lbl2.Text = ("Pie cuadrado")
+        End If
+
         If cbode.Text = ("Metro cuadrado") And cboa.Text = ("Vara Cuadrada") Then
             lblrespuesta.Text = Val(txtvalor.Text) / 1.431
             lbl2.Text = ("Varas cuadradas")
@@ -121,6 +173,11 @@
         End If
 
         '--------------------------------Tareas---------------------------------------------------------
+        If cbode.Text = ("Tarea") And cboa.Text = ("Pie cuadrado") Then
+            lblrespuesta.Text = Val(txtvalor.Text) / 0.00014774656489
+            lbl2.Text = ("Pie cuadrado")
+        End If
+
         If cbode.Text = ("Tarea") And cboa.Text = ("Vara Cuadrada") Then
             lblrespuesta.Text = Val(txtvalor.Text) / 894.98443634
             lbl2.Text = ("Varas cuadradas")
@@ -152,6 +209,11 @@
         End If
 
         '---------------------------------Manzanas--------------------------------------------------------
+        If cbode.Text = ("Manzana") And cboa.Text = ("Pie cuadrado") Then
+            lblrespuesta.Text = Val(txtvalor.Text) / 0.000013188960818
+            lbl2.Text = ("Pie cuadrado")
+        End If
+
         If cbode.Text = ("Manzana") And cboa.Text = ("Vara Cuadrada") Then
             lblrespuesta.Text = Val(txtvalor.Text) / 10000
             lbl2.Text = ("Varas cuadradas")
@@ -183,6 +245,11 @@
         End If
 
         '---------------------------------Hectareas----------------------------------------------------------
+        If cbode.Text = ("Hectareas") And cboa.Text = ("Pie cuadrado") Then
+            lblrespuesta.Text = Val(txtvalor.Text) / 0.000009290304
+            lbl2.Text = ("Pie cuadrado")
+        End If
+
         If cbode.Text = ("Hectareas") And cboa.Text = ("Vara Cuadrada") Then
             lblrespuesta.Text = Val(txtvalor.Text) / 14233.213046
             lbl2.Text = ("Varas cuadradas")
@@ -236,6 +303,7 @@
 
 
         MessageBox.Show("Tenga un lido dia, bendiciones :)")
+
         End
 
     End Sub
