@@ -384,7 +384,7 @@ Partial Class Form1
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(6)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1014, 102)
+        Me.Panel1.Size = New System.Drawing.Size(1014, 88)
         Me.Panel1.TabIndex = 1
         '
         'rdoconversordearea
