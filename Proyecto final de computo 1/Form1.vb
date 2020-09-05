@@ -327,4 +327,46 @@
 
 
     End Sub
+
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim C = txtcantidad.Text
+        Dim R = txtcajas.Text
+        Dim U = txtunidad.Text
+        Dim v, nr, sb, rc, vv, rp, nn, y, ro, x
+
+
+
+        If txtcajas.Text = "" Then
+            rp = (C / U) '11,2
+            nr = Int(rp)
+            sb = C - (nr * U)
+            txtcajas.Text = nr.ToString() + "/" + sb.ToString()
+        End If
+
+
+        If txtcantidad.Text = "" Then
+            rc = ""
+            x = 0
+            nn = txtcajas.Text.Length
+
+
+            While x < nn
+                rc = txtcajas.Text.Substring(x, 1)
+                If rc = "/" Then
+                    y = x
+                End If
+
+                x = x + 1
+            End While
+
+            v = txtcajas.Text.Substring(0, y)
+            nn = (nn - y) - 1
+            y = y + 1
+            vv = txtcajas.Text.Substring(y, nn)
+            ro = (v * U) + vv
+            txtcantidad.Text = ro
+
+        End If
+    End Sub
 End Class
