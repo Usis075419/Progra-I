@@ -65,6 +65,7 @@ Partial Class Form1
         Me.TabPrincipal.Controls.Add(Me.TabPage2)
         Me.TabPrincipal.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabPrincipal.Location = New System.Drawing.Point(0, 0)
+        Me.TabPrincipal.Margin = New System.Windows.Forms.Padding(6)
         Me.TabPrincipal.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPrincipal.Name = "TabPrincipal"
         Me.TabPrincipal.SelectedIndex = 0
@@ -86,6 +87,11 @@ Partial Class Form1
         Me.TabPage1.Controls.Add(Me.txtcantidad)
         Me.TabPage1.Controls.Add(Me.rdo1)
         Me.TabPage1.Controls.Add(Me.Button1)
+        Me.TabPage1.Location = New System.Drawing.Point(8, 39)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(6)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(6)
+        Me.TabPage1.Size = New System.Drawing.Size(998, 630)
         Me.TabPage1.Location = New System.Drawing.Point(4, 25)
         Me.TabPage1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Name = "TabPage1"
@@ -98,6 +104,10 @@ Partial Class Form1
         '
         Me.Button5.BackColor = System.Drawing.Color.Crimson
         Me.Button5.Image = Global.Proyecto_final_de_computo_1.My.Resources.Resources.PIA18847_hires
+        Me.Button5.Location = New System.Drawing.Point(124, 544)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(6)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(150, 44)
         Me.Button5.Location = New System.Drawing.Point(83, 348)
         Me.Button5.Margin = New System.Windows.Forms.Padding(4)
         Me.Button5.Name = "Button5"
@@ -110,6 +120,10 @@ Partial Class Form1
         '
         Me.Button4.BackColor = System.Drawing.Color.Crimson
         Me.Button4.Image = Global.Proyecto_final_de_computo_1.My.Resources.Resources.PIA18847_hires
+        Me.Button4.Location = New System.Drawing.Point(638, 544)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(6)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(150, 44)
         Me.Button4.Location = New System.Drawing.Point(425, 348)
         Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
@@ -121,6 +135,9 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(352, 109)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(204, 25)
         Me.Label5.Location = New System.Drawing.Point(235, 70)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
@@ -131,6 +148,9 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(244, 361)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(170, 25)
         Me.Label4.Location = New System.Drawing.Point(163, 231)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
@@ -141,6 +161,9 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(479, 214)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(92, 25)
         Me.Label3.Location = New System.Drawing.Point(319, 137)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
@@ -151,6 +174,9 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(119, 214)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(110, 25)
         Me.Label2.Location = New System.Drawing.Point(79, 137)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
@@ -160,6 +186,9 @@ Partial Class Form1
         '
         'txtcajas
         '
+        Me.txtcajas.Location = New System.Drawing.Point(439, 361)
+        Me.txtcajas.Name = "txtcajas"
+        Me.txtcajas.Size = New System.Drawing.Size(233, 31)
         Me.txtcajas.Location = New System.Drawing.Point(293, 231)
         Me.txtcajas.Margin = New System.Windows.Forms.Padding(2)
         Me.txtcajas.Name = "txtcajas"
@@ -168,6 +197,9 @@ Partial Class Form1
         '
         'txtunidad
         '
+        Me.txtunidad.Location = New System.Drawing.Point(601, 214)
+        Me.txtunidad.Name = "txtunidad"
+        Me.txtunidad.Size = New System.Drawing.Size(187, 31)
         Me.txtunidad.Location = New System.Drawing.Point(401, 137)
         Me.txtunidad.Margin = New System.Windows.Forms.Padding(2)
         Me.txtunidad.Name = "txtunidad"
@@ -176,6 +208,9 @@ Partial Class Form1
         '
         'txtcantidad
         '
+        Me.txtcantidad.Location = New System.Drawing.Point(249, 214)
+        Me.txtcantidad.Name = "txtcantidad"
+        Me.txtcantidad.Size = New System.Drawing.Size(184, 31)
         Me.txtcantidad.Location = New System.Drawing.Point(166, 137)
         Me.txtcantidad.Margin = New System.Windows.Forms.Padding(2)
         Me.txtcantidad.Name = "txtcantidad"
@@ -195,6 +230,10 @@ Partial Class Form1
         Me.rdo1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime
         Me.rdo1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
         Me.rdo1.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.rdo1.Location = New System.Drawing.Point(-388, -208)
+        Me.rdo1.Margin = New System.Windows.Forms.Padding(6)
+        Me.rdo1.Name = "rdo1"
+        Me.rdo1.Size = New System.Drawing.Size(153, 35)
         Me.rdo1.Location = New System.Drawing.Point(-259, -133)
         Me.rdo1.Margin = New System.Windows.Forms.Padding(4)
         Me.rdo1.Name = "rdo1"
@@ -209,6 +248,10 @@ Partial Class Form1
         '
         Me.Button1.BackColor = System.Drawing.Color.Crimson
         Me.Button1.Image = Global.Proyecto_final_de_computo_1.My.Resources.Resources.PIA18847_hires
+        Me.Button1.Location = New System.Drawing.Point(357, 433)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(6)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(150, 44)
         Me.Button1.Location = New System.Drawing.Point(238, 277)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
@@ -232,6 +275,11 @@ Partial Class Form1
         Me.TabPage2.Controls.Add(Me.LblDe)
         Me.TabPage2.Controls.Add(Me.BtnConversordearea)
         Me.TabPage2.Controls.Add(Me.PictureBox1)
+        Me.TabPage2.Location = New System.Drawing.Point(8, 39)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(6)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(6)
+        Me.TabPage2.Size = New System.Drawing.Size(998, 630)
         Me.TabPage2.Location = New System.Drawing.Point(4, 25)
         Me.TabPage2.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Name = "TabPage2"
@@ -245,6 +293,10 @@ Partial Class Form1
         '
         Me.Button3.BackColor = System.Drawing.Color.Crimson
         Me.Button3.Image = Global.Proyecto_final_de_computo_1.My.Resources.Resources.PIA18847_hires
+        Me.Button3.Location = New System.Drawing.Point(16, 554)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(6)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(150, 44)
         Me.Button3.Location = New System.Drawing.Point(11, 355)
         Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
@@ -257,6 +309,10 @@ Partial Class Form1
         '
         Me.Button2.BackColor = System.Drawing.Color.Crimson
         Me.Button2.Image = Global.Proyecto_final_de_computo_1.My.Resources.Resources.PIA18847_hires
+        Me.Button2.Location = New System.Drawing.Point(254, 354)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(6)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(150, 44)
         Me.Button2.Location = New System.Drawing.Point(169, 227)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
@@ -279,6 +335,9 @@ Partial Class Form1
         '
         Me.cboa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboa.FormattingEnabled = True
+        Me.cboa.Items.AddRange(New Object() {"Pie cuadrado", "Vara Cuadrada", "Yarda cuadrada", "Metro cuadrado", "Tarea", "Manzana", "Hectarea"})
+        Me.cboa.Location = New System.Drawing.Point(620, 115)
+        Me.cboa.Margin = New System.Windows.Forms.Padding(6)
         Me.cboa.Items.AddRange(New Object() {"Vara Cuadrada", "Yarda cuadrada", "Metro cuadrado", "Tarea", "Manzana", "Hectarea"})
         Me.cboa.Location = New System.Drawing.Point(413, 74)
         Me.cboa.Margin = New System.Windows.Forms.Padding(4)
@@ -291,6 +350,9 @@ Partial Class Form1
         Me.cbode.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar
         Me.cbode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbode.FormattingEnabled = True
+        Me.cbode.Items.AddRange(New Object() {"Pie cuadrado", "Vara Cuadrada", "Yarda cuadrada", "Metro cuadrado", "Tarea", "Manzana", "Hectarea"})
+        Me.cbode.Location = New System.Drawing.Point(132, 115)
+        Me.cbode.Margin = New System.Windows.Forms.Padding(6)
         Me.cbode.Items.AddRange(New Object() {"Vara Cuadrada", "Yarda cuadrada", "Metro cuadrado", "Tarea", "Manzana", "Hectarea"})
         Me.cbode.Location = New System.Drawing.Point(88, 74)
         Me.cbode.Margin = New System.Windows.Forms.Padding(4)
@@ -331,6 +393,8 @@ Partial Class Form1
         '
         'txtvalor
         '
+        Me.txtvalor.Location = New System.Drawing.Point(370, 229)
+        Me.txtvalor.Margin = New System.Windows.Forms.Padding(6)
         Me.txtvalor.Location = New System.Drawing.Point(247, 147)
         Me.txtvalor.Margin = New System.Windows.Forms.Padding(4)
         Me.txtvalor.Name = "txtvalor"
@@ -363,6 +427,10 @@ Partial Class Form1
         '
         Me.BtnConversordearea.BackColor = System.Drawing.Color.Crimson
         Me.BtnConversordearea.Image = Global.Proyecto_final_de_computo_1.My.Resources.Resources.PIA18847_hires
+        Me.BtnConversordearea.Location = New System.Drawing.Point(586, 354)
+        Me.BtnConversordearea.Margin = New System.Windows.Forms.Padding(6)
+        Me.BtnConversordearea.Name = "BtnConversordearea"
+        Me.BtnConversordearea.Size = New System.Drawing.Size(150, 44)
         Me.BtnConversordearea.Location = New System.Drawing.Point(391, 227)
         Me.BtnConversordearea.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnConversordearea.Name = "BtnConversordearea"
@@ -374,6 +442,10 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Proyecto_final_de_computo_1.My.Resources.Resources.yeah
+        Me.PictureBox1.Location = New System.Drawing.Point(-54, -154)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(6)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(1114, 854)
         Me.PictureBox1.Location = New System.Drawing.Point(-36, -99)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
@@ -389,6 +461,9 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.rdoconversorpropio)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(6)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1014, 88)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(676, 52)
@@ -441,6 +516,7 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(676, 433)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.TabPrincipal)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form1"
         Me.Text = "Form1"
