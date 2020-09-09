@@ -28,5 +28,26 @@
         If optPotenciador.Checked Then
             LblRespuesta.Text = Num1 ^ Num2
         End If
+        'casos combo box
+        Select Case cbolistadeopciones.SelectedIndex
+            Case 1
+                LblRespuesta.Text = Num1 + Num2
+
+            Case 2
+                LblRespuesta.Text = Num1 - Num2
+
+            Case 3
+                LblRespuesta.Text = Num1 * Num2
+            Case 4
+                LblRespuesta.Text = Num1 / Num2
+
+            Case 5
+                LblRespuesta.Text = Num1 Mod Num2
+            Case 6
+                LblRespuesta.Text = Num1 ^ Num2
+
+
+        End Select
     End Sub
+
 End Class

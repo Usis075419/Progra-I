@@ -34,6 +34,7 @@ Partial Class Form1
         Me.optPotenciador = New System.Windows.Forms.RadioButton()
         Me.BtnCalcular = New System.Windows.Forms.Button()
         Me.LblRespuesta = New System.Windows.Forms.Label()
+        Me.cbolistadeopciones = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'LblNum1
@@ -162,11 +163,23 @@ Partial Class Form1
         Me.LblRespuesta.TabIndex = 16
         Me.LblRespuesta.Text = "Respuesta"
         '
+        'cbolistadeopciones
+        '
+        Me.cbolistadeopciones.BackColor = System.Drawing.Color.Yellow
+        Me.cbolistadeopciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbolistadeopciones.FormattingEnabled = True
+        Me.cbolistadeopciones.Items.AddRange(New Object() {"Seleccione una Opcion", "Suma", "Resta", "Multiplicacion", "Division", "Mod", "Potenciador"})
+        Me.cbolistadeopciones.Location = New System.Drawing.Point(216, 40)
+        Me.cbolistadeopciones.Name = "cbolistadeopciones"
+        Me.cbolistadeopciones.Size = New System.Drawing.Size(121, 21)
+        Me.cbolistadeopciones.TabIndex = 17
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(221, 242)
+        Me.ClientSize = New System.Drawing.Size(362, 242)
+        Me.Controls.Add(Me.cbolistadeopciones)
         Me.Controls.Add(Me.LblRespuesta)
         Me.Controls.Add(Me.BtnCalcular)
         Me.Controls.Add(Me.optPotenciador)
@@ -198,4 +211,5 @@ Partial Class Form1
     Friend WithEvents optPotenciador As RadioButton
     Friend WithEvents BtnCalcular As Button
     Friend WithEvents LblRespuesta As Label
+    Friend WithEvents cbolistadeopciones As ComboBox
 End Class
