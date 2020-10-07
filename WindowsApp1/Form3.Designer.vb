@@ -66,7 +66,7 @@ Partial Class Form3
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(352, 248)
+        Me.Button1.Location = New System.Drawing.Point(324, 250)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(108, 41)
         Me.Button1.TabIndex = 16
