@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form2
+Partial Class loguin
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -102,7 +102,7 @@ Partial Class Form2
         Me.ClientSize = New System.Drawing.Size(376, 268)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Form2"
-        Me.Text = "Form2"
+        Me.Text = "LOGUEO DE EMPLEADO"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
