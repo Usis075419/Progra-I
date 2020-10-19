@@ -103,6 +103,12 @@
     <Compile Include="loguin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Nuevos ingresos.Designer.vb">
+      <DependentUpon>Nuevos ingresos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Nuevos ingresos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="proveedores.Designer.vb">
       <DependentUpon>proveedores.vb</DependentUpon>
     </Compile>
@@ -145,6 +151,9 @@
     <EmbeddedResource Include="loguin.resx">
       <DependentUpon>loguin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Nuevos ingresos.resx">
+      <DependentUpon>Nuevos ingresos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="proveedores.resx">
       <DependentUpon>proveedores.vb</DependentUpon>
     </EmbeddedResource>
@@ -181,6 +190,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\26881-naruto.jpg" />
+    <None Include="Resources\asus-rog-republic-of-gamers-logo_3840x2160_xtrafondos.com.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
