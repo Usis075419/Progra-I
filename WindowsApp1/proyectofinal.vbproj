@@ -89,6 +89,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="buildf.Designer.vb">
+      <DependentUpon>buildf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="buildf.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Class1.vb" />
     <Compile Include="Contacts.vb">
       <SubType>Form</SubType>
@@ -131,6 +137,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="servicio.Designer.vb">
+      <DependentUpon>servicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="servicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UserControl1.Designer.vb">
       <DependentUpon>UserControl1.vb</DependentUpon>
     </Compile>
@@ -145,6 +157,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="buildf.resx">
+      <DependentUpon>buildf.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Contacts.resx">
       <DependentUpon>Contacts.vb</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +177,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicio.resx">
+      <DependentUpon>servicio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.vb</DependentUpon>
@@ -190,6 +208,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\ciudad-con-rog-republic-of-gamers-logo_3840x2160_xtrafondos.com.jpg" />
+    <None Include="Resources\FORMAAA.jpg" />
+    <None Include="Resources\services33.jpg" />
     <None Include="Resources\26881-naruto.jpg" />
     <None Include="Resources\asus-rog-republic-of-gamers-logo_3840x2160_xtrafondos.com.jpg" />
   </ItemGroup>

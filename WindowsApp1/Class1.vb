@@ -14,11 +14,16 @@ Public Class db_conexion
         mconexion.Open()
     End Sub
 
+
+
     Private Function executeSql(ByVal sql As String)
         mcomandos.Connection = mconexion
         mcomandos.CommandText = sql
         Return mcomandos.ExecuteNonQuery()
     End Function
+
+
+
     Public Function obtenerdata()
         ds.Clear()
         mcomandos.Connection = mconexion
@@ -35,6 +40,17 @@ Public Class db_conexion
         mcomandos.CommandText = "select * from ingresos"
         madapter.SelectCommand = mcomandos
         madapter.Fill(ds, "ingresos")
+
+
+        mcomandos.CommandText = "select * from buildtt"
+        madapter.SelectCommand = mcomandos
+        madapter.Fill(ds, "buildtt")
+
+
+
+        mcomandos.CommandText = "select * from serviciott"
+        madapter.SelectCommand = mcomandos
+        madapter.Fill(ds, "serviciott")
         Return ds
     End Function
 
@@ -109,4 +125,56 @@ Public Class db_conexion
 
         Return msg
     End Function
+
+
+
+    Public Function buildtabla(ByVal datos As String(), ByVal cambio As String)
+        Dim sql, msg As String
+        Select Case cambio
+            Case "nuevo"
+                sql = "INSERT INTO buildtt (nbuild,format,descrip,preci) VALUES('" + datos(1) + "','" + datos(2) + "','" + datos(3) + "','" + datos(4) + "')"
+            Case "modificar"
+                sql = "UPDATE buildtt SET nbuild='" + datos(1) + "',format='" + datos(2) + "',descrip='" + datos(3) + "',preci='" + datos(4) + "' WHERE id='" + datos(0) + "'"
+            Case "eliminar"
+                sql = "DELETE FROM buildtt WHERE id='" + datos(0) + "'"
+        End Select
+        If (executeSql(sql) > 0) Then
+            msg = "exito"
+        Else
+            msg = "error"
+        End If
+
+        Return msg
+    End Function
+
+
+
+
+
+    Public Function serviciotabla(ByVal datos As String(), ByVal cambio As String)
+        Dim sql, msg As String
+        Select Case cambio
+            Case "nuevo"
+                sql = "INSERT INTO serviciott (servi,producr,artic,fechar,notas,totalpr) VALUES('" + datos(1) + "','" + datos(2) + "','" + datos(3) + "','" + datos(4) + "','" + datos(5) + "','" + datos(6) + "')"
+            Case "modificar"
+                sql = "UPDATE serviciott SET servi='" + datos(1) + "',producr='" + datos(2) + "',artic='" + datos(3) + "',fechar='" + datos(4) + "',notas='" + datos(5) + "', totalpr='" + datos(6) + "' WHERE id='" + datos(0) + "'"
+            Case "eliminar"
+                sql = "DELETE FROM serviciott WHERE id='" + datos(0) + "'"
+        End Select
+        If (executeSql(sql) > 0) Then
+            msg = "exito"
+        Else
+            msg = "error"
+        End If
+
+        Return msg
+    End Function
+
+
+
+
 End Class
+
+
+
+
