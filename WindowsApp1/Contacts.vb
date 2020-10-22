@@ -21,4 +21,15 @@
         Dim ningreso As New Nuevos_ingresos
         ningreso.Show()
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim bui As New buildf
+        bui.Show()
+
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Dim tservi As New servicio
+        tservi.Show()
+    End Sub
 End Class

@@ -118,10 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="FORMAAA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FORMAAA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="asus-rog-republic-of-gamers-logo_3840x2160_xtrafondos.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\asus-rog-republic-of-gamers-logo_3840x2160_xtrafondos.com.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="26881-naruto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\26881-naruto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="services33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\services33.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ciudad-con-rog-republic-of-gamers-logo_3840x2160_xtrafondos.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ciudad-con-rog-republic-of-gamers-logo_3840x2160_xtrafondos.com.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
