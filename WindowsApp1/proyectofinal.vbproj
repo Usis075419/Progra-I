@@ -115,6 +115,24 @@
     <Compile Include="Nuevos ingresos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Nuevos pedidos.Designer.vb">
+      <DependentUpon>Nuevos pedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Nuevos pedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ordenes.Designer.vb">
+      <DependentUpon>Ordenes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ordenes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos.Designer.vb">
+      <DependentUpon>Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="proveedores.Designer.vb">
       <DependentUpon>proveedores.vb</DependentUpon>
     </Compile>
@@ -169,6 +187,15 @@
     <EmbeddedResource Include="Nuevos ingresos.resx">
       <DependentUpon>Nuevos ingresos.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Nuevos pedidos.resx">
+      <DependentUpon>Nuevos pedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ordenes.resx">
+      <DependentUpon>Ordenes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos.resx">
+      <DependentUpon>Productos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="proveedores.resx">
       <DependentUpon>proveedores.vb</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +235,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\productos.png" />
     <None Include="Resources\ciudad-con-rog-republic-of-gamers-logo_3840x2160_xtrafondos.com.jpg" />
     <None Include="Resources\FORMAAA.jpg" />
     <None Include="Resources\services33.jpg" />

@@ -32,4 +32,19 @@
         Dim tservi As New servicio
         tservi.Show()
     End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Dim npedidos As New Nuevos_pedidos
+        npedidos.Show()
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Dim tordenes As New Ordenes
+        tordenes.Show()
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Dim tprodu As New Productos
+        tprodu.Show()
+    End Sub
 End Class

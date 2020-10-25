@@ -12,6 +12,17 @@
         datatable.PrimaryKey = New DataColumn() {datatable.Columns("idproveedro")}
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+
+
+
+
+
+
+
+
+
+
         Dim msg = conexion.proveedortabla(New String() {
             Me.Tag, TextBox1.Text, TextBox2.Text, TextBox3.Text, TextBox4.Text, TextBox5.Text, TextBox6.Text
            }, cambio)
@@ -21,7 +32,14 @@
         Else
             obtenerdatos()
         End If
+
+
+
+
+
+
     End Sub
+
 
     Private Sub limpiar()
         TextBox1.Text = ""
