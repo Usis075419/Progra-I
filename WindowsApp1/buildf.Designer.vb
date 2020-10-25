@@ -223,7 +223,6 @@ Partial Class buildf
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.ciudad_con_rog_republic_of_gamers_logo_3840x2160_xtrafondos_com
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)

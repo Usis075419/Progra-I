@@ -46,6 +46,9 @@ Partial Class proveedores
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnbuscar = New System.Windows.Forms.Button()
+        Me.btnmodificar = New System.Windows.Forms.Button()
+        Me.btneliminar = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -54,9 +57,11 @@ Partial Class proveedores
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Panel1.Controls.Add(Me.Button2)
+        Me.Panel1.Controls.Add(Me.btnbuscar)
+        Me.Panel1.Controls.Add(Me.btnmodificar)
         Me.Panel1.Controls.Add(Me.DataGridView1)
         Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.btneliminar)
         Me.Panel1.Controls.Add(Me.TextBox6)
         Me.Panel1.Controls.Add(Me.TextBox5)
         Me.Panel1.Controls.Add(Me.Label7)
@@ -78,9 +83,9 @@ Partial Class proveedores
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button2.Location = New System.Drawing.Point(635, 250)
+        Me.Button2.Location = New System.Drawing.Point(433, 318)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(108, 41)
+        Me.Button2.Size = New System.Drawing.Size(108, 32)
         Me.Button2.TabIndex = 18
         Me.Button2.Text = "CANCELAR"
         Me.Button2.UseVisualStyleBackColor = False
@@ -304,6 +309,36 @@ Partial Class proveedores
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Proveedores"
         '
+        'btnbuscar
+        '
+        Me.btnbuscar.Location = New System.Drawing.Point(473, 256)
+        Me.btnbuscar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnbuscar.Name = "btnbuscar"
+        Me.btnbuscar.Size = New System.Drawing.Size(75, 29)
+        Me.btnbuscar.TabIndex = 59
+        Me.btnbuscar.Text = "Buscar"
+        Me.btnbuscar.UseVisualStyleBackColor = True
+        '
+        'btnmodificar
+        '
+        Me.btnmodificar.Location = New System.Drawing.Point(570, 256)
+        Me.btnmodificar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnmodificar.Name = "btnmodificar"
+        Me.btnmodificar.Size = New System.Drawing.Size(75, 29)
+        Me.btnmodificar.TabIndex = 58
+        Me.btnmodificar.Text = "Modificar"
+        Me.btnmodificar.UseVisualStyleBackColor = True
+        '
+        'btneliminar
+        '
+        Me.btneliminar.Location = New System.Drawing.Point(661, 256)
+        Me.btneliminar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btneliminar.Name = "btneliminar"
+        Me.btneliminar.Size = New System.Drawing.Size(75, 29)
+        Me.btneliminar.TabIndex = 56
+        Me.btneliminar.Text = "Eliminar"
+        Me.btneliminar.UseVisualStyleBackColor = True
+        '
         'proveedores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -311,6 +346,7 @@ Partial Class proveedores
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(779, 358)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Button2)
         Me.Name = "proveedores"
         Me.Text = "REGISTRO DE CLIENTES"
         Me.Panel1.ResumeLayout(False)
@@ -344,4 +380,7 @@ Partial Class proveedores
     Friend WithEvents correo As DataGridViewTextBoxColumn
     Friend WithEvents direccion As DataGridViewTextBoxColumn
     Friend WithEvents giro As DataGridViewTextBoxColumn
+    Friend WithEvents btnbuscar As Button
+    Friend WithEvents btnmodificar As Button
+    Friend WithEvents btneliminar As Button
 End Class

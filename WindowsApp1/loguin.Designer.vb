@@ -23,7 +23,10 @@ Partial Class loguin
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnbuscar = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.btneliminar = New System.Windows.Forms.Button()
+        Me.btnmodificar = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.idproveedro = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -45,7 +48,10 @@ Partial Class loguin
         Me.Panel1.BackColor = System.Drawing.Color.LavenderBlush
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel1.Controls.Add(Me.btnbuscar)
         Me.Panel1.Controls.Add(Me.Button2)
+        Me.Panel1.Controls.Add(Me.btneliminar)
+        Me.Panel1.Controls.Add(Me.btnmodificar)
         Me.Panel1.Controls.Add(Me.DataGridView1)
         Me.Panel1.Controls.Add(Me.TextBox3)
         Me.Panel1.Controls.Add(Me.Label4)
@@ -59,15 +65,45 @@ Partial Class loguin
         Me.Panel1.Size = New System.Drawing.Size(626, 243)
         Me.Panel1.TabIndex = 0
         '
+        'btnbuscar
+        '
+        Me.btnbuscar.Location = New System.Drawing.Point(7, 184)
+        Me.btnbuscar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnbuscar.Name = "btnbuscar"
+        Me.btnbuscar.Size = New System.Drawing.Size(106, 52)
+        Me.btnbuscar.TabIndex = 59
+        Me.btnbuscar.Text = "Buscar"
+        Me.btnbuscar.UseVisualStyleBackColor = True
+        '
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button2.Location = New System.Drawing.Point(180, 176)
+        Me.Button2.Location = New System.Drawing.Point(207, 207)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(106, 49)
+        Me.Button2.Size = New System.Drawing.Size(91, 29)
         Me.Button2.TabIndex = 19
         Me.Button2.Text = "CANCELAR"
         Me.Button2.UseVisualStyleBackColor = False
+        '
+        'btneliminar
+        '
+        Me.btneliminar.Location = New System.Drawing.Point(232, 130)
+        Me.btneliminar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btneliminar.Name = "btneliminar"
+        Me.btneliminar.Size = New System.Drawing.Size(75, 49)
+        Me.btneliminar.TabIndex = 56
+        Me.btneliminar.Text = "Eliminar"
+        Me.btneliminar.UseVisualStyleBackColor = True
+        '
+        'btnmodificar
+        '
+        Me.btnmodificar.Location = New System.Drawing.Point(130, 130)
+        Me.btnmodificar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnmodificar.Name = "btnmodificar"
+        Me.btnmodificar.Size = New System.Drawing.Size(75, 49)
+        Me.btnmodificar.TabIndex = 58
+        Me.btnmodificar.Text = "Modificar"
+        Me.btnmodificar.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -76,7 +112,7 @@ Partial Class loguin
         Me.DataGridView1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idproveedro, Me.nombre, Me.sucursal, Me.contraseña})
-        Me.DataGridView1.Location = New System.Drawing.Point(335, 2)
+        Me.DataGridView1.Location = New System.Drawing.Point(297, -105)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
@@ -183,7 +219,7 @@ Partial Class loguin
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(23, 176)
+        Me.Button1.Location = New System.Drawing.Point(7, 130)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(106, 49)
         Me.Button1.TabIndex = 1
@@ -220,4 +256,7 @@ Partial Class loguin
     Friend WithEvents sucursal As DataGridViewTextBoxColumn
     Friend WithEvents contraseña As DataGridViewTextBoxColumn
     Friend WithEvents Button2 As Button
+    Friend WithEvents btnbuscar As Button
+    Friend WithEvents btneliminar As Button
+    Friend WithEvents btnmodificar As Button
 End Class

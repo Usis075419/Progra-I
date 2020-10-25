@@ -38,97 +38,90 @@ Partial Class Nuevos_ingresos
         Me.fecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.proveedor = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.productouni = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnbuscar = New System.Windows.Forms.Button()
+        Me.btnmodificar = New System.Windows.Forms.Button()
+        Me.btneliminar = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(195, 66)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TextBox1.Location = New System.Drawing.Point(130, 43)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(148, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(18, 71)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(12, 46)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(133, 20)
+        Me.Label1.Size = New System.Drawing.Size(91, 13)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Producto recbido:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(18, 292)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(12, 190)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(141, 20)
+        Me.Label3.Size = New System.Drawing.Size(99, 13)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Producto  / unidad:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(18, 225)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(12, 146)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(85, 20)
+        Me.Label4.Size = New System.Drawing.Size(59, 13)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Proveedor:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(18, 146)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(12, 95)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(131, 20)
+        Me.Label5.Size = New System.Drawing.Size(89, 13)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "fecha de ingreso:"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(195, 146)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TextBox2.Location = New System.Drawing.Point(130, 95)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(148, 26)
+        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 6
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(195, 225)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TextBox3.Location = New System.Drawing.Point(130, 146)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(148, 26)
+        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
         Me.TextBox3.TabIndex = 7
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(195, 292)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TextBox4.Location = New System.Drawing.Point(130, 190)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(148, 26)
+        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
         Me.TextBox4.TabIndex = 8
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(75, 351)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button1.Location = New System.Drawing.Point(50, 228)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(112, 58)
+        Me.Button1.Size = New System.Drawing.Size(75, 38)
         Me.Button1.TabIndex = 9
         Me.Button1.Text = "Agregar producto"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(596, 351)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button2.Location = New System.Drawing.Point(476, 224)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(112, 58)
+        Me.Button2.Size = New System.Drawing.Size(75, 38)
         Me.Button2.TabIndex = 11
         Me.Button2.Text = "Salir"
         Me.Button2.UseVisualStyleBackColor = True
@@ -140,12 +133,13 @@ Partial Class Nuevos_ingresos
         Me.DataGridView1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.producto, Me.fecha, Me.proveedor, Me.productouni})
-        Me.DataGridView1.Location = New System.Drawing.Point(441, 27)
+        Me.DataGridView1.Location = New System.Drawing.Point(294, 18)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 62
         Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(423, 236)
+        Me.DataGridView1.Size = New System.Drawing.Size(282, 153)
         Me.DataGridView1.TabIndex = 18
         '
         'id
@@ -194,12 +188,45 @@ Partial Class Nuevos_ingresos
         Me.productouni.ReadOnly = True
         Me.productouni.Width = 150
         '
+        'btnbuscar
+        '
+        Me.btnbuscar.Location = New System.Drawing.Point(374, 228)
+        Me.btnbuscar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnbuscar.Name = "btnbuscar"
+        Me.btnbuscar.Size = New System.Drawing.Size(75, 38)
+        Me.btnbuscar.TabIndex = 59
+        Me.btnbuscar.Text = "Buscar"
+        Me.btnbuscar.UseVisualStyleBackColor = True
+        '
+        'btnmodificar
+        '
+        Me.btnmodificar.Location = New System.Drawing.Point(155, 228)
+        Me.btnmodificar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnmodificar.Name = "btnmodificar"
+        Me.btnmodificar.Size = New System.Drawing.Size(75, 38)
+        Me.btnmodificar.TabIndex = 58
+        Me.btnmodificar.Text = "Modificar"
+        Me.btnmodificar.UseVisualStyleBackColor = True
+        '
+        'btneliminar
+        '
+        Me.btneliminar.Location = New System.Drawing.Point(273, 228)
+        Me.btneliminar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btneliminar.Name = "btneliminar"
+        Me.btneliminar.Size = New System.Drawing.Size(75, 38)
+        Me.btneliminar.TabIndex = 56
+        Me.btneliminar.Text = "Eliminar"
+        Me.btneliminar.UseVisualStyleBackColor = True
+        '
         'Nuevos_ingresos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(876, 428)
+        Me.ClientSize = New System.Drawing.Size(584, 278)
+        Me.Controls.Add(Me.btnbuscar)
+        Me.Controls.Add(Me.btnmodificar)
+        Me.Controls.Add(Me.btneliminar)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -211,7 +238,6 @@ Partial Class Nuevos_ingresos
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Nuevos_ingresos"
         Me.Text = "Nuevos ingresos"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -236,4 +262,7 @@ Partial Class Nuevos_ingresos
     Friend WithEvents fecha As DataGridViewTextBoxColumn
     Friend WithEvents proveedor As DataGridViewTextBoxColumn
     Friend WithEvents productouni As DataGridViewTextBoxColumn
+    Friend WithEvents btnbuscar As Button
+    Friend WithEvents btnmodificar As Button
+    Friend WithEvents btneliminar As Button
 End Class

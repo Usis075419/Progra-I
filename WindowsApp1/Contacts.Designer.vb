@@ -27,6 +27,11 @@ Partial Class Form1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -84,12 +89,58 @@ Partial Class Form1
         Me.Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button4.UseVisualStyleBackColor = False
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.Color.MistyRose
+        Me.GroupBox1.Controls.Add(Me.Button8)
+        Me.GroupBox1.Controls.Add(Me.Button7)
+        Me.GroupBox1.Controls.Add(Me.Button6)
+        Me.GroupBox1.Location = New System.Drawing.Point(422, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(342, 271)
+        Me.GroupBox1.TabIndex = 8
+        Me.GroupBox1.TabStop = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button6.Location = New System.Drawing.Point(6, 19)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(133, 79)
+        Me.Button6.TabIndex = 9
+        Me.Button6.Text = "PEDIR MERCANCIA"
+        Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.Button6.UseVisualStyleBackColor = False
+        '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button7.Location = New System.Drawing.Point(6, 155)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(133, 79)
+        Me.Button7.TabIndex = 10
+        Me.Button7.Text = "PRODUCTOS"
+        Me.Button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.Button7.UseVisualStyleBackColor = False
+        '
+        'Button8
+        '
+        Me.Button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button8.Location = New System.Drawing.Point(184, 19)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(133, 79)
+        Me.Button8.TabIndex = 11
+        Me.Button8.Text = "ORDENES ACTIVAS"
+        Me.Button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.Button8.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.WindowsApp1.My.Resources.Resources._26881_naruto
-        Me.ClientSize = New System.Drawing.Size(437, 310)
+        Me.ClientSize = New System.Drawing.Size(794, 310)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -97,6 +148,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
         Me.Text = "MENU "
+        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -106,4 +158,8 @@ Partial Class Form1
     Friend WithEvents Button3 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button6 As Button
 End Class
